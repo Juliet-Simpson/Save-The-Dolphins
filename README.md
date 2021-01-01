@@ -5,24 +5,40 @@ Milestone One Project for Code Institute's Fullstack Software Development Diplom
 A four page website to promote a friend's Vegan Catering business, consisting of an inviting landing page, an about page giving more detailed information, a photo gallery and a contact form.  There is also the option to download a menu/pricelist as a pdf plus links to social media pages.
 
 ## **Demo** 
+---
 
 A live demo can be found here.
 
 ## **UX**
-
+---
 ### **User Stories**
 
-Q. I am researching catering options for my daughter's wedding.  She and her fiance are both committed vegans so I am looking for a specialist in purely plant-based food.  I would like to know examples of food and prices.
+Users searching for party catering will want to see the gallery paictures and downlaodable menu/pricelist.
 
-A. The gallery and downlaodable menu/pricelist will fulfil this query.
+Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to discuss their requirements further.
 
-Q. I am opening an indoor climbing wall for families and I need a supplier of light snacks and refreshments for the plant-based cafe there.
+Event organisers looking for a catering trailer will want to see photos, as on the landing page and in the gallery, and learn about successful past event, which can be read about on the about page.  The contact form can be used to request a callback to discuss requirements further.
 
-A. Details of supply capabilities can be found in the about page.
+### **Strategy**
 
-Q. My church is running a sustainability fayre this summer and we would like a vegan catering trailer present to sell refreshments and light meals to visitors.
+To create an attractive online presence for this business, giving users sufficicient info in the first instance, presented in a logical and appealing way, that they enquire further and ultimately make a booking.
 
-A. Photos of the catering trailer are shown on the landing page and gallery and details of past events cn be read in the about page.  The contact form can be used to request a callback to discuss requirements further.
+### **Scope**
+
+The site will include a landing page, an about page with factual information about cababilities, the food and past events, a photo gallery page and a contact form.  Plus a downloadable menu/pricelist.
+
+### **Structure**
+
+One page will flow logically to another but there will be a menu bar which will enable navigation to any page from any other also. 
+
+### **Skeleton**
+
+Links to wireframes
+
+### **Surface**
+
+
+
 
 
 
