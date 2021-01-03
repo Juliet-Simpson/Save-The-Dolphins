@@ -13,7 +13,7 @@ A live demo can be found here.
 ---
 ### **User Stories**
 
-Users searching for party catering will want to see the gallery paictures and downlaodable menu/pricelist.
+Users searching for party catering will want to see the gallery pictures and downlaodable menu/pricelist.
 
 Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to discuss their requirements further.
 
@@ -36,6 +36,9 @@ One page will flow logically to another but there will be a menu bar which will 
 Links to wireframes
 
 ### **Surface**
+
+### **Notes**
+Struggled to make navbar items justify to the right.  Thanks Jim on Slack for helping.  Needed to use the justify-content-end class on the navbar-collapse div not on the ul that I was trying.
 
 
 
