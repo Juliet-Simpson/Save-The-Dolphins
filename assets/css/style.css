@@ -1,0 +1,57 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:400,700&display=swap');
+
+.font {
+    font-family: Philosopher;
+}
+
+/*Colors*/
+
+.bg-navbar{
+    background-color: #84bb44;
+}
+
+
+/*brand*/
+
+.navbar-light .navbar-brand{
+    color:#36b079;
+    font-size: 25px;
+}
+/*navbar*/
+
+.navbar{
+    padding-top: 0;
+    padding-bottom:0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-left: 0;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color:#bc3483;
+    font-size: 22px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:#bc3483;
+    font-size: 22px;
+}
+
+@media (min-width: 630px){
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+}
+
+/*logo*/
+.bg-brand{
+    background-color: #fffffe;
+    padding:8px;
+    margin-left: 0px;
+}

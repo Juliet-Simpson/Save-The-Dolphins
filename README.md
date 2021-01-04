@@ -40,6 +40,13 @@ Links to wireframes
 ### **Notes**
 Struggled to make navbar items justify to the right.  Thanks Jim on Slack for helping.  Needed to use the justify-content-end class on the navbar-collapse div not on the ul that I was trying.
 
+https://www.shutterstock.com/purchase/success?orderId=CS-02FF3-41F7 Used Shutterstock free trial for logo.
+
+https://imagecolorpicker.com/ to take colors from logo. VInspired by the vibrant colours of fresh fruit and veg.
+
+Easier to use pre-existing bootstrap class for navbar text than to make new color class.
+
+Used Hover class to make nav items grow from external library hover.css
 
 
 
