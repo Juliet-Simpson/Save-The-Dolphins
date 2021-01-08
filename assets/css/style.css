@@ -1,25 +1,44 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap');
 
 .font {
     font-family: Philosopher;
 }
 
-/*Colors*/
+/*Colors
+
+#84bb44
+
+#bc3483
+
+#da698f
+
+#fffffe
+
+#c5ce6d
+
+#ed9877
+
+#d7baba
+
+
+*/
+
+
+
+/*navbar*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 .bg-navbar{
     background-color: #84bb44;
 }
-
-
-/*brand*/
-
-.navbar-light .navbar-brand{
-    color:#36b079;
-    font-size: 25px;
-}
-/*navbar*/
 
 .navbar{
     padding-top: 0;
@@ -30,28 +49,91 @@
     padding-left: 0;
 }
 
-
-
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-    color:#bc3483;
-    font-size: 22px;
+    color: #bc3483;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link:hover{
+    color: #bc3483;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color:#bc3483;
-    font-size: 22px;
+    color:#da698f;
+    font-size: 24px;
 }
 
-@media (min-width: 630px){
-.navbar-expand-sm .navbar-nav .nav-link{
-    padding-right: .5rem;
-    padding-left: .5rem;
-}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#da698f;
+    font-size: 24px;
 }
 
-/*logo*/
-.bg-brand{
+
+/*dropdown*/
+
+.navbar-nav{
+    text-align: end;
+}
+
+/*brand*/
+
+
+.navbar-light .navbar-brand{
+    color:#36b079;
+    font-size: 27px;
+    font-weight: bold;
     background-color: #fffffe;
-    padding:8px;
+    padding:8px 7px;
     margin-left: 0px;
+}
+
+.navbar-light .navbar-brand:hover{
+    color:#36b079;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #fffffe;
+    padding:8px 7px;
+    margin-left: 0px;
+}
+
+
+/*
+ .hvr-shutter-out-vertical{
+    background: #fffffe;
+}
+
+.hvr-shutter-out-vertical:hover{
+    background-color:#c5ce6d;
+}
+*/
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color:#ed9877;
+  color:#fffffe;
+  text-align: left;
+  font-size:110%;
+  padding-left: 10px;
+  height:9%;
+}
+
+.social-links li{
+    font-size:140%;
+    display:inline;
+    padding: 5%;  
+}
+
+.social-links i{
+    color:#fffffe;
+}
+
+.social-links i:hover{
+    color:#dc3a2a;
 }
