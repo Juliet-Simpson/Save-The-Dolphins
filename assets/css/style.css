@@ -2,8 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap');
 
-.font {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Philosopher;
+
 }
 
 /*Colors
@@ -55,11 +62,7 @@
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link:hover{
-    color: #bc3483;
-    font-size: 25px;
-    font-weight: bold;
-}
+
 
 .navbar-light .navbar-nav .nav-link{
     color:#da698f;
@@ -71,6 +74,11 @@
     font-size: 24px;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link:hover{
+    color: #bc3483;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /*dropdown*/
 
@@ -99,6 +107,14 @@
     margin-left: 0px;
 }
 
+.c{
+    padding-right: 0;
+}
+
+.nscious{
+    padding-left:0;
+}
+
 
 /*
  .hvr-shutter-out-vertical{
@@ -110,8 +126,13 @@
 }
 */
 
+footer {
+    width:100%;
+    height: 100px;
+  background-color:#ed9877;
+}
 
-.footer {
+/* .footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -121,17 +142,17 @@
   text-align: left;
   font-size:110%;
   padding-left: 10px;
-  height:9%;
-}
+  height:6%;
+} */
 
 .social-links li{
     font-size:140%;
     display:inline;
-    padding: 5%;  
+    padding: 3%;  
 }
 
 .social-links i{
-    color:#fffffe;
+    color:#070706;
 }
 
 .social-links i:hover{
