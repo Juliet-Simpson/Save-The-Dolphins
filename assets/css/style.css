@@ -37,8 +37,12 @@ Colors
     position: fixed;
     width: 100%;
     padding: 0;
-    background-color:#9ecd86;
+    background-color:rgba(158, 205, 134, 1);
     text-align: right;
+}
+
+.navbar-home{
+    background-color:rgba(158, 205, 134, 0.9);
 }
 
 
@@ -47,6 +51,12 @@ Colors
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.toggler-icon, li.nav-item{
+    position:relative;
+    z-index: 100;
+}
+
 
 
 /*brand*/
@@ -91,16 +101,16 @@ Colors
 
 .navbar-nav{
     text-align: end;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 
 .pink-line {
     position:fixed;
-    top: 60px;
-    height: 5px;
+    top: 3.75rem;
+    height: 0.25rem;
     width:100%;
-    background-color: #ed9877;
+    background-color: rgba(237, 152, 119, 0.8);
 }
 
 /*----footer*/
@@ -110,21 +120,31 @@ footer .row {
   left: 0;
   bottom: 0;
   width:100%;
-  background-color:#ed9877;
+  background-color:rgba(237, 152, 119, 1);
   color:#fffffe;
   text-align: left;
-  font-size:20px;
+  font-size:1.4rem;
   font-weight: bold;
-  padding-left: 10px;
-  height:50px;
+  padding-left: 0.7rem;
+  height:3rem;
   margin:0;
   vertical-align: middle;
 } 
 
+footer .row-home {
+    background-color:rgba(237, 152, 119, 0.8);
+}
+
+@media screen and (max-width:386){
+    footer .row {
+        height:5.5rem;
+    }
+}
+
 .fa-copyright{
     font-weight: 700;
     vertical-align: middle;
-    padding:15px;
+    padding:0.75rem;
 }
 
 .social {
@@ -137,9 +157,10 @@ footer .row {
 }
 
 .social-links li{
-    font-size: 20px; 
+    font-size: 1.25rem; 
     display: inline;
-    padding:11px;
+    padding:0.5rem;
+    margin-right: 1.25rem;
 }
 
 .social-links i{
@@ -163,33 +184,117 @@ footer .row {
     height:100vh;
 }
 
-.home-text, .home-text h2 {
-    color: #ffffff;
+/*---jumbotron*/
+
+.jumbotron{
+    position:absolute;
+    margin-top: 30vh;
+    margin-right: 10vw;
+    width: 25rem;
+    padding: 1.25rem;
+    font-size: 120%;
+    background-color: rgba(135, 163, 112, 0.575);
+    color:#ffffff;
+}
+
+@media screen and(min-width:420px){
+    .jumbotron{
+        width:15rem;
+    }
+}
+
+.home-text h2 {
+      display: inline;
+} 
+
+    
+
+
+/*--button*/
+
+.button-row {
+    bottom:90px;
+    position:absolute;
+    width:100vw;
+    text-align:center;
+}
+
+.btn-secondary{
+    background-color: rgba(230, 122, 43, 0.8);
+    border-radius: 20%;
+    border-color: #e67a2b;
+    font-weight: bold;
+    font-size: 120%;
+    text-transform:uppercase;
+    color:#324918;
+}
+
+.btn-secondary:hover{
+    background-color: rgba(242, 188, 39, 0.8);
+    border-color: #f2bc27;
+    color:#44b27e;
+}
+
+
+
+/*--About-page*/
+
+.scroll{
+    height:100vh;
+    overflow-y:auto;
+}
+
+.about-info {
+    top: 20px;
+    position:relative;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about-info h2{
+    display:inline;
+}
+
+.options {
+  list-style-type: none;
+  padding:0 1.2rem;
+}
+
+.about-info p{
+    margin-bottom: 0;
+}
+
+.heading-icon {
+    padding-right: 10px;
+    padding-top:80px;
+}
+
+.about-icon{
+    padding-top: 40px;
+}
+
+.about-button{
+    margin: 1.7rem 0;
+}
+
+.food-text{
+    padding:2rem 1.2rem 0;
+}
+
+.events{
+    text-align: left;
+}
+
+/* .events li::before {
+    content: "\f073";
+    font-family: "Font Awesome 5 Free";
+} */
+
+.events p{
     display: inline;
 }
 
-.home-text {
-    font-size: 130%;
-    font-family: Philosopher, sans-serif;
-    letter-spacing: 0px;
 
-    width: 350px;
-    height: 340px;
-
-    padding: 10px;
-
-    background-color: rgba(135, 163, 112, 0.575);
-
-    bottom: 220px;
-    right: 40px;
-
-    position: absolute;
-
-}
-
-.button-row{
-    bottom:150px;
-}
 
 /*---Carousel-page*/
 
