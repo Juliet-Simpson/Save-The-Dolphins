@@ -13,24 +13,6 @@ body {
 
 }
 
-/* 
-Colors
-
-#9ecd86 navbar green
-
-#bc3483
-
-#da698f
-
-#fffffe
-
-#c5ce6d
-
-#ed9877
-
-#d7baba
- */
-
 /*navbar*/
 
 .navbar {
@@ -39,15 +21,16 @@ Colors
     padding: 0;
     background-color:rgba(158, 205, 134, 1);
     text-align: right;
+    z-index:100;
 }
 
 .navbar-home{
-    background-color:rgba(158, 205, 134, 0.9);
+    background-color:rgba(158, 205, 134, 0.8);
 }
 
 
 .navbar img {
-    height: 60px;
+    height: 3.75rem;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -111,12 +94,188 @@ Colors
     height: 0.25rem;
     width:100%;
     background-color: rgba(237, 152, 119, 0.8);
+    z-index: 100;
 }
 
+
+/*--Home-body*/
+/*--Home-image*/
+
+.home-image {
+    background-image: url(../images/home-image.png); 
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    width:100vw;
+    height:100vh;
+}
+
+/*---jumbotron*/
+
+.jumbotron{
+    position:absolute;
+    margin-top: 30vh;
+    margin-right: 10vw;
+    width: 25rem;
+    padding: 1.25rem;
+    font-size: 120%;
+    background-color: rgba(135, 163, 112, 0.575);
+    color:#ffffff;
+}
+
+/* @media screen and (min-width:420px){
+    .jumbotron{
+        width:15rem;
+    }
+} */
+
+.home-text h2 {
+      display: inline;
+} 
+
+    
+
+
+/*--button*/
+
+.button-row {
+    bottom:90px;
+    position:absolute;
+    width:100vw;
+    text-align:center;
+}
+
+.btn-secondary{
+    background-color: rgba(242, 188, 39, 0.8);
+    border-radius: 20%;
+    border-color: #e67a2b;
+    font-weight: bold;
+    font-size: 120%;
+    text-transform:uppercase;
+    color:#324918;
+}
+
+.btn-secondary:hover{
+    background-color: rgba(230, 122, 43, 0.8);
+    border-color: #f2bc27;
+    color:#44b27e;
+}
+
+
+
+/*--About-page*/
+
+.layout{
+    padding-top: 4rem;
+}
+
+
+.about-info {
+    position:relative;
+    text-align: center;
+}
+
+.about-info i, .about-info h2{
+    margin-top: 0;
+    padding-top: 2.5rem;
+}
+
+.about-info h2{
+    display:inline;
+}
+
+.options {
+  list-style-type: none;
+  padding:0 1.2rem;
+}
+
+
+.heading-icon {
+    padding-right: 10px;
+
+}
+
+.about-icon{
+    padding-top: 2.5rem;
+}
+
+@media screen and (min-width:768px){
+    .about-icon{
+    padding-top: 1.5rem;
+}
+}/*DOESN"T WORK*/
+
+.about-button{
+    margin: 1.7rem 0;
+}
+
+.food-text{
+    padding:2rem 1.2rem 0;
+}
+
+.events{
+    text-align: left;
+}
+
+/* .events li::before {
+    content: "\f073";
+    font-family: "Font Awesome 5 Free";
+} */
+
+.events p{
+    display: inline;
+}
+
+.capabilities{
+    position: relative;
+    background-color: #c5ce6d;
+  
+ 
+}
+
+.food {
+    position: relative;
+    background-color: #bb6dce;
+
+ 
+}
+
+.past-events {
+    position: relative;
+    background-color: #6dbbce;
+
+}
+
+.btn-primary {
+    margin-bottom: 5rem;
+}
+
+
+/*---Carousel-page*/
+
+.carousel-bg{
+    background-color: #c5ce6d;
+    width:100vw;
+    height:100vh;
+}
+
+.carousel-slide{
+    vertical-align: middle;
+}
+
+
 /*----footer*/
+footer{ 
+    z-index: 100;
+}
+
+footer .container-fluid{
+    padding:0;
+}
 
 footer .row {
-  position: fixed;
+    position: fixed;
   left: 0;
   bottom: 0;
   width:100%;
@@ -128,7 +287,7 @@ footer .row {
   padding-left: 0.7rem;
   height:3rem;
   margin:0;
-  vertical-align: middle;
+  padding-bottom: 0;
 } 
 
 footer .row-home {
@@ -136,7 +295,7 @@ footer .row-home {
 }
 
 @media screen and (max-width:386){
-    footer .row {
+    footer .row{
         height:5.5rem;
     }
 }
@@ -169,137 +328,4 @@ footer .row-home {
 
 .social-links i:hover{
     color:#dc3a2a;
-}
-
-/*--Home-body*/
-/*--Home-image*/
-
-.home-image {
-    background-image: url(../images/home-image.png); 
-    background-position: center center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover;  
-    width:100vw;
-    height:100vh;
-}
-
-/*---jumbotron*/
-
-.jumbotron{
-    position:absolute;
-    margin-top: 30vh;
-    margin-right: 10vw;
-    width: 25rem;
-    padding: 1.25rem;
-    font-size: 120%;
-    background-color: rgba(135, 163, 112, 0.575);
-    color:#ffffff;
-}
-
-@media screen and(min-width:420px){
-    .jumbotron{
-        width:15rem;
-    }
-}
-
-.home-text h2 {
-      display: inline;
-} 
-
-    
-
-
-/*--button*/
-
-.button-row {
-    bottom:90px;
-    position:absolute;
-    width:100vw;
-    text-align:center;
-}
-
-.btn-secondary{
-    background-color: rgba(230, 122, 43, 0.8);
-    border-radius: 20%;
-    border-color: #e67a2b;
-    font-weight: bold;
-    font-size: 120%;
-    text-transform:uppercase;
-    color:#324918;
-}
-
-.btn-secondary:hover{
-    background-color: rgba(242, 188, 39, 0.8);
-    border-color: #f2bc27;
-    color:#44b27e;
-}
-
-
-
-/*--About-page*/
-
-.scroll{
-    height:100vh;
-    overflow-y:auto;
-}
-
-.about-info {
-    top: 20px;
-    position:relative;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.about-info h2{
-    display:inline;
-}
-
-.options {
-  list-style-type: none;
-  padding:0 1.2rem;
-}
-
-.about-info p{
-    margin-bottom: 0;
-}
-
-.heading-icon {
-    padding-right: 10px;
-    padding-top:80px;
-}
-
-.about-icon{
-    padding-top: 40px;
-}
-
-.about-button{
-    margin: 1.7rem 0;
-}
-
-.food-text{
-    padding:2rem 1.2rem 0;
-}
-
-.events{
-    text-align: left;
-}
-
-/* .events li::before {
-    content: "\f073";
-    font-family: "Font Awesome 5 Free";
-} */
-
-.events p{
-    display: inline;
-}
-
-
-
-/*---Carousel-page*/
-
-#carousel-bg{
-    background-color: #c5ce6d;
-    width:100vw;
-    height:100vh;
 }
