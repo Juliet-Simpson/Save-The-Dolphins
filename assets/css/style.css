@@ -260,8 +260,44 @@ body {
     height:100vh;
 }
 
+/* /* .carousel-row{
+    position:absolute;
+    margin-top: 2rem;
+} 
+
 .carousel-slide{
     vertical-align: middle;
+} 
+
+.carousel-indicators li{
+    position:relative;
+    margin-top: 1rem;
+}
+
+.prev-button {
+    width:100%;
+    text-align:right;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width:10rem;
+    height:10rem;
+}*/
+
+/*contact-form*/
+
+.contact-heading{
+    margin-top: 5rem;
+}
+
+.form-label{
+    padding-top:1rem;
+    margin-bottom: 0;
+}
+
+.center-button{
+    text-align:center;
+    padding-top: 1rem;
 }
 
 
