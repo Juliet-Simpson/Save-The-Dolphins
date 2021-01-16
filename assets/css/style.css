@@ -2,11 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: Philosopher,sans-serif;
@@ -20,7 +20,6 @@ body {
     width: 100%;
     padding: 0;
     background-color:rgba(158, 205, 134, 1);
-    text-align: right;
     z-index:100;
 }
 
@@ -149,7 +148,7 @@ body {
 .btn-secondary{
     background-color: rgba(242, 188, 39, 0.8);
     border-radius: 20%;
-    border-color: #e67a2b;
+    border-color: rgba(242, 188, 39, 0.8);
     font-weight: bold;
     font-size: 120%;
     text-transform:uppercase;
@@ -158,7 +157,7 @@ body {
 
 .btn-secondary:hover{
     background-color: rgba(230, 122, 43, 0.8);
-    border-color: #f2bc27;
+    border-color: rgba(230, 122, 43, 1);
     color:#44b27e;
 }
 
@@ -286,8 +285,19 @@ body {
 
 /*contact-form*/
 
+.contact-bg{
+    background-color: #f9d16c;
+    /* background-color: #ffe29c; */
+    color:#57775d;
+}
+
 .contact-heading{
     margin-top: 5rem;
+    margin-bottom:0.7rem;
+}
+
+h5{
+    margin-bottom: 0;
 }
 
 .form-label{
@@ -295,9 +305,27 @@ body {
     margin-bottom: 0;
 }
 
+form p{
+    margin: 0.5rem 0.5rem 0.3rem 0;
+}
+
+.bottom-checkbox{
+    margin-bottom: 0.5rem;
+}
+
+#requirements{
+    margin: 0.8rem 0;
+}
+
+.callback{
+    display:inline;
+}
+
+
 .center-button{
     text-align:center;
-    padding-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -306,9 +334,9 @@ footer{
     z-index: 100;
 }
 
-footer .container-fluid{
+/* footer .container-fluid{
     padding:0;
-}
+} */
 
 footer .row {
     position: fixed;
@@ -322,7 +350,7 @@ footer .row {
   font-weight: bold;
   padding-left: 0.7rem;
   height:3rem;
-  margin:0;
+  /* margin:0; */
   padding-bottom: 0;
 } 
 
