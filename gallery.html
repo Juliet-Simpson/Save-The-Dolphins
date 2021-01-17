@@ -21,17 +21,17 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link hvr-grow" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvr-grow" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-grow" href="gallery.html">Gallery</a>
+                    <li class="nav-item active">
+                        <a class="nav-link hvr-grow" href="gallery.html">Gallery<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvr-grow" href="#">Menu</a>
+                        <a class="nav-link hvr-grow" href="assets/menu.pdf" target="_blank">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvr-grow" href="contact.html">Contact</a>
@@ -41,7 +41,7 @@
         </nav>
         <div class="pink-line"></div>
     </header>
-    <section>
+    <section class="gallery-page">
         <div class="container-fluid">
             <div class="row carousel-row carousel-bg">
                 <div class="col-1 col-md-2">
@@ -122,19 +122,21 @@
 
     </section>
     <footer>
-        <div class="row">
+        <div class="container-fluid">
+        <div class="row row-home">
             <div class="col-8">
-                <i class="far fa-copyright"> Juliet Simpson 2021</i>
+                <i class="far fa-copyright" aria-hidden="true"> Juliet Simpson 2021</i><span class="sr-only">Copyright</span>
             </div>
             <div class="col-4 social">
                 <ul class="social-links">
                     <li><a href="https://www.facebook.com" target="_blank">
-                            <i class="fab fa-facebook fa-lg"></i></a>
+                            <i class="fab fa-facebook fa-lg" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
                     </li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"> </i></a>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg" aria-hidden="true"> </i><span class="sr-only">Instagram</span></a>
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>

@@ -227,51 +227,67 @@ body {
 }
 
 .capabilities{
-    position: relative;
-    background-color: #c5ce6d;
-  
+    /* position: relative; */
+    background-color: #b0db61;
+  /* background-color: #c5ce6d; */
+    color: #32083df1;
  
 }
 
 .food {
-    position: relative;
-    background-color: #bb6dce;
-
+    /* position: relative; */
+    /* background-color: #bb6dce; */
+    background-color: #bd637e;
+    color: #32083df1;
  
 }
 
 .past-events {
     position: relative;
-    background-color: #6dbbce;
+    /* background-color: #6dbbce; */
+    background-color: rgb(156, 125, 240);
+     color: #32083df1;
 
 }
 
 .btn-primary {
     margin-bottom: 5rem;
+    width: 7rem;
+    border-radius: 30%;
+    background-color: #f58c37;
+    border-color: #f58c37;
+    color: #32083df1;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover{
+    background-color: #f9ef6c;
+    border-color: #f9ef6c;
+    color: #bb6dce;
 }
 
 
 /*---Carousel-page*/
 
+.gallery-page{
+    padding-top: 5rem;
+    background-color: #c5ce6d;
+}
+
 .carousel-bg{
     background-color: #c5ce6d;
-    width:100vw;
     height:100vh;
+    width:100vw;
+
 }
 
-/* /* .carousel-row{
+/* .carousel-indicators{
     position:absolute;
-    margin-top: 2rem;
-} 
-
-.carousel-slide{
-    vertical-align: middle;
-} 
-
-.carousel-indicators li{
-    position:relative;
-    margin-top: 1rem;
-}
+ margin-top: 5rem;
+    top:auto;
+} */
 
 .prev-button {
     width:100%;
@@ -279,16 +295,16 @@ body {
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    width:10rem;
-    height:10rem;
-}*/
+    width:3rem;
+    height:3rem;
+    margin-bottom: 50%;
+}
 
 /*contact-form*/
 
 .contact-bg{
-    background-color: #f9d16c;
-    /* background-color: #ffe29c; */
-    color:#57775d;
+    background-color: #f9ef6c;
+    color:#20512f;
 }
 
 .contact-heading{
@@ -321,8 +337,13 @@ form p{
     display:inline;
 }
 
+#phonenumber{
+    display:inline;
+    width:11rem;
+}
 
-.center-button{
+
+.submit-button{
     text-align:center;
     margin-top: 0.5rem;
     margin-bottom: 4rem;
@@ -350,7 +371,7 @@ footer .row {
   font-weight: bold;
   padding-left: 0.7rem;
   height:3rem;
-  /* margin:0; */
+  margin:0;
   padding-bottom: 0;
 } 
 

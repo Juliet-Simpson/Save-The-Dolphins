@@ -78,6 +78,8 @@ My next step is to link up all my buttons and add aria attributes to my font-awe
 I need to complete the about text with Henry and add the downloadable menu.  I'm then left with solving my position/sizing issues for the jumbotron, footer, about page and gallery.  Then testing and completing the readme.
 I have been so focussed on building the site and worrying about the deadline that I haven't put my notes into my readme until now.
 
+Footer: the right margin returned, it does need to be set to 0 as Jim said.
+
 
 
 
