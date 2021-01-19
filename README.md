@@ -80,6 +80,8 @@ I have been so focussed on building the site and worrying about the deadline tha
 
 Footer: the right margin returned, it does need to be set to 0 as Jim said.
 
+18/1: I managed to target my gallery prev and next, buttons and resise them.  I had been trying with the wrong class name by mistake before, maybe from working late.
+
 
 
 
