@@ -82,6 +82,9 @@ Footer: the right margin returned, it does need to be set to 0 as Jim said.
 
 18/1: I managed to target my gallery prev and next, buttons and resise them.  I had been trying with the wrong class name by mistake before, maybe from working late.
 
-
+Continued to struggle with prev and next buttons.  Tutor chat with Stephen, learned super trick or margin right and left both auto to center something but here this broke down on small screen sizes.   Then had mentor session, Sandeep gave me lots of advice:  Put the buttons back on the photo as this is expected by users, make the images all the same size - I suggested by putting a background and he agreed, a good idea. 
+Done this using an external paint program, put the buttons back and now managed to vertically center using top and bottom auto taken from Stephen's trick of right and left auto.  Looking much better, feeling pleased.  Only concern is slightly poor resolution images but these have been given to me by the caterer so they are what I have for this project.
+Other advice from Sandeep, code in the menu in a page and also have a download button to open it in a separate window.  Better practice not to navigate users away from the main site if possible.  Also some advice of justifying left past events on the about page.  Wrap the paragraph in a div.  Obvious now he's suggested it.  So next to try.
+He advised to change the nav-item colour as the pink was hard to see.  I've chosen brown, it is not so much a vibrant fruit and veg colour but it is an organic color and it can be seen clearly which is most important.
 
 

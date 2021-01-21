@@ -60,13 +60,13 @@ body {
 
 
 .navbar-light .navbar-nav .nav-link{
-    color:#da698f;
+    color:#8b4f00;
     font-size: 24px;
     padding:6px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color:#da698f;
+    color:#8b4f00;
     font-size: 24px;
     padding:6px;
 }
@@ -184,16 +184,6 @@ body {
     display:inline;
 }
 
-.options {
-  list-style-type: none;
-  padding:0 1.2rem;
-}
-
-@media screen and (min-width:576px){
-    .options li{
-        padding:0 0.5rem;
-    }
-}
 
 
 .heading-icon {
@@ -201,18 +191,29 @@ body {
 
 }
 
-.about-icon{
+/* .about-icon{
     padding-top: 2.5rem;
-}
+} */
 
-@media screen and (min-width:576px){
+/* @media screen and (min-width:576px){
     .about-icon{
     padding-top: 0.5rem;
 }
-}/*DOESN"T WORK*/
+} */
 
 .about-button{
     margin: 1.7rem 0;
+}
+
+.options {
+  list-style-type: none;
+  padding:0 1.2rem;
+}
+
+@media screen and (min-width:576px){
+    .options {
+        padding:0 0.5rem;
+    }
 }
 
 .food-text{
@@ -223,23 +224,26 @@ body {
     .food-text{
         padding:2rem 0.5rem 0rem;
     }
+}
+
+.events{
+    padding-top: 2rem;
+}
 
 .events li{
     text-align: left;
 }
 
-.events p {
-    margin-left: 3rem;
-    display: block;
+.events i{
+    padding-top: 0;
 }
 
-/* .events li::before {
-    content: "\f073";
-    font-family: "Font Awesome 5 Free";
-} */
+.center-icon{
+    text-align: center;
+}
 
-.events p{
-    display: inline;
+.col-11{
+    padding-left: 0px;
 }
 
 .capabilities{
@@ -282,7 +286,7 @@ body {
 /*---Carousel-page*/
 
 .gallery-page{
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     background-color: #c5ce6d;
 }
 
@@ -291,23 +295,12 @@ body {
     height:100vh;
     width:100vw;
 }
+
+.carousel-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
  
-.carousel-control-prev, .carousel-control-next {
-    width:3rem;
-    height:3rem;
-    margin-top: 30vh;
-}
-
-.carousel-control-prev{
-    margin-left: 5rem;
-}
-
-@media screen (min-width:768px) {
-.carousel-control-prev{
-    margin-left:0rem;
-}
-}
-
 
 /*contact-form*/
 
@@ -391,7 +384,7 @@ footer .row {
   bottom: 0;
   width:100%;
   background-color:rgba(237, 152, 119, 1);
-  color:#bc3483;
+  color:#96376e;
   text-align: left;
   font-size:1.4rem;
   padding-left: 0.7rem;
@@ -432,7 +425,7 @@ footer .row-home {
 }
 
 .social-links i{
-    color:#bc3483;
+    color:#96376e;
 } 
 
 .social-links i:hover{
