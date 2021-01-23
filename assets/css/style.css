@@ -166,7 +166,7 @@ body {
 /*--About-page*/
 
 .layout{
-    padding-top: 4rem;
+    padding: 4rem 0 3rem;
 }
 
 
@@ -191,15 +191,6 @@ body {
 
 }
 
-/* .about-icon{
-    padding-top: 2.5rem;
-} */
-
-/* @media screen and (min-width:576px){
-    .about-icon{
-    padding-top: 0.5rem;
-}
-} */
 
 .about-button{
     margin: 1.7rem 0;
@@ -286,7 +277,6 @@ body {
 /*---Carousel-page*/
 
 .gallery-page{
-    /* padding-top: 5rem; */
     background-color: #c5ce6d;
 }
 
@@ -301,6 +291,73 @@ body {
     margin-bottom: auto;
 }
  
+/*menu-page*/
+
+.menu-logo{
+    width:100%;
+    height:auto;
+}
+
+.menu-text{
+    font-style: italic;
+    color:#20512f;
+}
+
+.menu-header{
+    padding:2.3rem 0 1.6rem;
+}
+
+.menu-heading{
+    padding-bottom:0.5rem;
+    text-transform: uppercase; 
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+.price-list{
+    list-style-type: none;
+    padding:0.5rem 0.4rem 0.5rem 0;
+    font-size: 110%;
+}
+
+.course{
+    margin-left: 1.5rem;
+}
+
+@media only screen and (min-width:576px){
+    .course{
+        margin-left: 0;
+    }
+}
+
+.dishes li{
+    padding-top:0.5rem;
+    padding-right:1rem;
+}
+
+@media only screen and (min-width:768px){
+    .dishes li{
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:576px){
+    .dishes li{
+        padding-right: 0;
+    }
+}
+
+.drinks{
+    width: 100%;
+    height:auto;
+    padding-top: 0.5rem;
+}
+
+@media only screen and (min-width:768px){
+    .drinks{
+        padding-top: 1.5rem;
+    }
+}
 
 /*contact-form*/
 
