@@ -87,4 +87,7 @@ Done this using an external paint program, put the buttons back and now managed 
 Other advice from Sandeep, code in the menu in a page and also have a download button to open it in a separate window.  Better practice not to navigate users away from the main site if possible.  Also some advice of justifying left past events on the about page.  Wrap the paragraph in a div.  Obvious now he's suggested it.  So next to try.
 He advised to change the nav-item colour as the pink was hard to see.  I've chosen brown, it is not so much a vibrant fruit and veg colour but it is an organic color and it can be seen clearly which is most important.
 
+Wrote in the menu page in html.  used columns for responsiveness and also to position prices.
+Learned to use html codes for special characters thanks to W3C validator.
+Major bug with horizontal scrollbar on mobile size and content overflowing.  Asked tutor support.. Igor suggesded using unicorn sparkles.  Tried this and looked like the paragraphs were overflowing. set their width to auto and that fixed it.  But then Igor said he didn't have the problem, I commented out the width auto and the scrollbar didn't return. He said it could be my browser having issues.
 
