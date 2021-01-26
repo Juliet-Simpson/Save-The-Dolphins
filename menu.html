@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Conscious Catering</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
@@ -42,7 +42,7 @@
         </nav>
         <div class="pink-line"></div>
     </header>
-    <section class="container menu-text">
+    <section class="container-fluid menu-text">
         <div class="row">
             <div class="col-1 col-sm-2 col-md-3 col-lg-4"></div>
             <div class="col-10 col-sm-8 col-md-6 col-lg-4 menu-header">
@@ -55,17 +55,17 @@
                 <h3 class="text-center menu-heading">external catering menu</h3>
                 <h5 class="text-center"><strong>Prices per head from:</strong></h5>
                 <ul class="price-list text-center">
-                    <li>1 course/light buffet: &pound6</li>
-                    <li>2 courses/full buffet: &pound10</li>
-                    <li>3 courses: &pound15</li>
-                    <li>Coffee, selection of teas and vegan chocolates: + &pound4</li>
-                    <li>Selection of soft drinks: + &pound4</li>
+                    <li>1 course/light buffet: &pound;6</li>
+                    <li>2 courses/full buffet: &pound;10</li>
+                    <li>3 courses: &pound;15</li>
+                    <li>Coffee, selection of teas and vegan chocolates: + &pound;4</li>
+                    <li>Selection of soft drinks: + &pound;4</li>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-1 col-lg-2"></div>
-            <div class="col-sm-10 col-lg-8">
+            <div class="d-none d-sm-block col-sm-1 col-lg-2"></div>
+            <div class="col-12 col-sm-10 col-lg-8 menu-body">
                 <h5 class="course"><strong>Starters</strong></h5>
                 <ul class="dishes">
                     <li>Crudit&eacute;s and fried potato wedges with dips: Hummus, Muhammara (Middle Eastern walnut and
@@ -80,9 +80,10 @@
                 </ul><br>
                 <h5 class="course"><strong>Mains</strong> (Sit down meals adapted for buffet serving)</h5>
                 <ul class="dishes">
-                    <li>Za&#8217tar spiced aubergine stew with wild rice, harissa and rose water.</li>
+                    <li>Za&#8217;tar spiced aubergine stew with wild rice, harissa and rose water.</li>
                     <li>Butternut and chickpea stew with courgette fritters.</li>
-                    <li>Vegetable Thali: Indian Main consisting of Lentil Dal, Rasam &#40;spicy sweet-sour soup&#41;, Vegan
+                    <li>Vegetable Thali: Indian Main consisting of Lentil Dal, Rasam (spicy sweet-sour soup),
+                        Vegan
                         Raita (yoghurt and veg dip), Channa (chickpea) Masala, Sambar &(South Indian and Sri Lankan
                         lentil and veg. stew) and Veg. curry.</li>
                     <li>Mushroom, walnut and cranberry wellington with roast potatoes, steamed seasonal green veg and
@@ -105,151 +106,236 @@
                 <h5 class="course"><strong>Drinks</strong></h5>
                 <p class="drinks course">Still and sparkling mineral water, orange and apple juice, lime, elderflower
                     and apple cordials: still or sparkling.</p><br>
-                    <p class="drinks course text-center"><strong>For a downloadable version of the external catering menu that opens in a new tab please click the button below:</strong></p>
-                    <div class="text-center">
-                        <a class="btn btn-info" href="assets/documents/external-menu.pdf" target="_blank" role="button">external menu</a>
-                    </div><br>
-                  <h3 class="text-center menu-heading">event trailer menu</h3><br>
-                  <h5 class="course"><strong>Savoury</strong></h5>
-                  <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Tunisian Bric (light fried pastry parcel) with potato, harissa, tofu, parsley and caper filling.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound4</strong></p></div>
+                <p class="drinks course text-center"><strong>For a downloadable version of the external catering menu
+                        that opens in a new tab please click the button below:</strong></p>
+                <div class="text-center">
+                    <a class="btn btn-info" href="assets/documents/external-menu.pdf" target="_blank"
+                        role="button">external menu</a>
+                </div><br>
+                <h3 class="text-center menu-heading">event trailer menu</h3><br>
+                <h5 class="course"><strong>Savoury</strong></h5>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Tunisian Bric (light fried pastry parcel) with potato, harissa, tofu, parsley and caper
+                                filling.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;4</strong></p>
+                    </div>
                 </div>
                 <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Indian street food: Aloo Tikki Chaat (fried new potatoes with chick peas).</li></ul></div>
-                    <div class="col-1"><p><strong>&pound5</strong></p></div>
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Indian street food: Aloo Tikki Chaat (fried new potatoes with chick peas).</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;5</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Indian street food: Crispy Sev (fried noodles) with date and tamarind chutney and coriander chilli sauce. </li></ul></div>
-                    <div class="col-1"><p><strong>&pound5</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Indian street food: Crispy Sev (fried noodles) with date and tamarind chutney and
+                                coriander chilli sauce. </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;5</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Falafel wrap with tahini sauce, salad and pickles.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound6</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Falafel wrap with tahini sauce, salad and pickles.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;6</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Tofu Kathi rolls: Paratha (flaky flatbread) wraps with spicy tofu and peppers.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound6</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Tofu Kathi rolls: Paratha (flaky flatbread) wraps with spicy tofu and peppers.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;6</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Asparagus Club Sandwich with rainbow chard and pine nut cream.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound6</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Asparagus Club Sandwich with rainbow chard and pine nut cream.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;6</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Mexican bean burrito with guacamole, salsa, vegan cheese and salad</li></ul></div>
-                    <div class="col-1"><p><strong>&pound7</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Mexican bean burrito with guacamole, salsa, vegan cheese and salad</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;7</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Burgers: Portabello mushroom and pecan OR Beetroot in a seeded bap with hummus, salad and potato wedges.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound8</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Burgers: Portabello mushroom and pecan OR Beetroot in a seeded bap with hummus, salad
+                                and potato wedges.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;8</strong></p>
+                    </div>
                 </div>
-                    <br>  
+                <br>
                 <h5 class="course"><strong>Sweet</strong></h5>
                 <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Beetroot and chocolate brownies</li></ul></div>
-                    <div class="col-1"><p><strong>&pound4</strong></p></div>
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Beetroot and chocolate brownies</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;4</strong></p>
+                    </div>
                 </div>
                 <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Pistachio and nutmeg cake.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound4</strong></p></div>
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Pistachio and nutmeg cake.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;4</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Sultana flapjack.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Sultana flapjack.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Apple and Marmalade tart slice.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound4</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Apple and Marmalade tart slice.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;4</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Spiced apple and date pie slice.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound4</strong></p></div>
-                </div><br>  
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Spiced apple and date pie slice.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;4</strong></p>
+                    </div>
+                </div><br>
                 <h5 class="course"><strong>Drinks</strong></h5>
                 <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Mineral water: still or sparkling.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound2</strong></p></div>
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Mineral water: still or sparkling.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;2</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Traditional lemonade.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Traditional lemonade.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Elderflower cordial.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Elderflower cordial.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Apple or Orange juice.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Apple or Orange juice.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Selection of teas.</li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Selection of teas.</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div>
-                    <div class="row trailer">
-                      <div class="col-11">
-                <ul>
-                    <li>Coffee with optional almond or oat milk. </li></ul></div>
-                    <div class="col-1"><p><strong>&pound3</strong></p></div>
+                <div class="row trailer">
+                    <div class="col-10 col-sm-11">
+                        <ul>
+                            <li>Coffee with optional almond or oat milk. </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <p><strong>&pound;3</strong></p>
+                    </div>
                 </div><br>
-                <p class="drinks course text-center"><strong>For a downloadable version of the event trailer menu that opens in a new tab please click the button below:</strong></p>
+                <p class="drinks course text-center"><strong>For a downloadable version of the event trailer menu that
+                        opens in a new tab please click the button below:</strong></p>
                 <div class="text-center">
-                        <a class="btn btn-info" href="assets/documents/event-menu.pdf" target="_blank" role="button">event menu</a>
-                    </div><br>
-                  <h4 class="text-center menu-heading">food from either menu is available for business supply.</h4>
-                  <p class="drinks course text-center"><strong>To open a complete downloadable menu in a new tab please click the button below. Prices are dependendent on scale.</strong></p>  
-                  <div class="text-center">
-                        <a class="btn btn-info" href="assets/documents/full-menu.pdf" target="_blank" role="button">full menu</a>
-                    </div><br>
+                    <a class="btn btn-info" href="assets/documents/event-menu.pdf" target="_blank" role="button">event
+                        menu</a>
+                </div><br>
+                <h4 class="text-center menu-heading">food from either menu is available for business supply.</h4>
+                <p class="drinks course text-center"><strong>To open a complete downloadable menu in a new tab please
+                        click the button below. Prices are dependendent on scale.</strong></p>
+                <div class="text-center">
+                    <a class="btn btn-info" href="assets/documents/full-menu.pdf" target="_blank" role="button">full
+                        menu</a>
+                </div><br>
             </div>
-            <div class="col-sm-1 col-lg-2"></div>
+            <div class="d-none d-sm-block col-sm-1 col-lg-2"></div>
         </div>
     </section>
-
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8">
+                <div class="col-4 copyright">
                     <i class="far fa-copyright" aria-hidden="true"> Juliet Simpson 2021</i><span
                         class="sr-only">Copyright</span>
                 </div>
-                <div class="col-4 social">
+                <div class="d-none d-sm-block col-sm-4"></div>
+                <div class="col-8 col-sm-4">
                     <ul class="social-links">
                         <li><a href="https://www.facebook.com" target="_blank">
                                 <i class="fab fa-facebook fa-lg" aria-hidden="true"></i><span
@@ -267,5 +353,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
-
 </html>
