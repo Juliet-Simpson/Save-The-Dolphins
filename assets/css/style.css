@@ -19,6 +19,12 @@ body {
     z-index:100;
 }
 
+@media only screen and (min-width:900px){
+    .navbar{
+    padding-right:1.5rem
+    }
+}
+
 .navbar-home{
     background-color:rgba(158, 205, 134, 0.8);
 }
@@ -29,9 +35,6 @@ body {
     margin-right: 5px;
 }
 
-.hvr-shutter-out-vertical{
-    background: none;
-}
 
 .toggler-icon, li.nav-item{
     position:relative;
@@ -46,7 +49,7 @@ body {
     padding:6px;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover{
+.navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.show:hover, .navbar-light .navbar-nav .show>.nav-link:hover{
     color: #bc3483;
     font-size: 25px;
     font-weight: bold;
@@ -179,6 +182,13 @@ body {
     }
 }
 
+@media only screen and (min-height:800px){
+    .jumbotron{
+        margin-top: 14rem;
+    }
+}
+
+/*learn more button*/
 
 .button-row {
     bottom:4.5rem;
@@ -310,6 +320,12 @@ ul.social-links{
     background-color: rgb(156, 125, 240);
 }
 
+@media only screen and (min-height:800px){
+    .capabilities, .food, .past-events{
+        padding-top:1.5rem;
+    }
+}
+
 .about-info {
     position:relative;
     text-align: center;
@@ -349,6 +365,18 @@ ul.social-links{
     }
 }
 
+@media only screen and (min-width:1200px){
+    .options {
+        padding:0 1.6rem;
+    }
+}
+
+@media only screen and (min-height:800px){
+    .options {
+        padding:0 2rem;
+    }
+}
+
 
 .food-text{
     padding:1.5rem 1.2rem 0rem;
@@ -360,6 +388,17 @@ ul.social-links{
     }
 }
 
+@media screen and (min-width:1200px){
+    .food-text{
+        padding:2.5rem 1.6rem 0;
+    }
+}
+
+@media only screen and (min-height:800px){
+    .fod-text {
+        padding:2.5rem 2rem 0;
+    }
+}
 
 .icon-col{
     padding-right: 0;
@@ -380,6 +419,18 @@ ul.social-links{
     }
 }
 
+@media only screen and (min-width:1200px){
+    .events{
+        padding-right: 1.5rem;
+    }
+}
+
+@media only screen and (min-height:800px){
+    .events{
+        padding-right: 2rem;
+    }
+}
+
 .events p{
     text-align: left;
 }
@@ -396,6 +447,8 @@ ul.social-links{
 .icon-col{
      padding-right: 1rem;
 }
+
+/*about page buttons*/
 
 .btn-primary {
     margin-bottom:  5rem;
@@ -596,6 +649,12 @@ ul.social-links{
     min-height:100vh;
 }
 
+@media only screen and (max-height:800px){
+    .contact-break{
+        display:none;
+    }
+}
+
 .contact-heading{
     margin-top: 5rem;
     margin-bottom:0.7rem;
@@ -629,6 +688,24 @@ form p{
 #phonenumber{
     display:inline;
     width:11rem;
+}
+
+@media only screen and (min-height:800px){
+    #phonenumber, #fullname, #email{
+        margin-top:0.7rem;
+    }
+    #fullname, #email{
+        margin-bottom: 0.6rem;
+    }
+    .bottom-checkbox{
+        margin-bottom: 0.7rem;
+    }
+    #party{
+        margin-top:0.5rem;
+    }
+    #requirements{
+        margin-bottom: 0.7rem;
+    }
 }
 
 
