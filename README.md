@@ -2,7 +2,7 @@
 
 Milestone One Project for Code Institute's Fullstack Software Development Diploma.
 
-A four page website to promote a friend's Vegan Catering business, consisting of an inviting landing page, an about page giving more detailed information, a photo gallery and a contact form.  There is also the option to download a menu/pricelist as a pdf plus links to social media pages.
+A five page website to promote a friend's Vegan Catering business, consisting of an inviting landing page, an about page giving more detailed information, a photo gallery page, a menu page and a contact form.  There is also the option to download a menu/pricelists as pdfs, plus links to social media pages.
 
 ## **Demo** 
 ---
@@ -13,21 +13,31 @@ A live demo can be found here.
 ---
 ### **User Stories**
 
-Users searching for party catering will want to see the gallery pictures and downlaodable menu/pricelist.
+**First time visitors**
 
-Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to discuss their requirements further.
+- Users searching for party catering will want to see the gallery pictures and menu/pricelists.  They may also want to download a copy.
 
-Event organisers looking for a catering trailer will want to see photos, as on the landing page and in the gallery, and learn about successful past events, which can be read about on the about page.  The contact form can be used to request a callback to discuss requirements further.
+- Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to arrange discussing their requirements further.
 
-Returning visitors, perhaps who have already made a booking, would like to download a menu quickly.  This can be done using the menu download link in the footer.
+- Event organisers looking for a catering trailer will want to see photos,as on the landing page and in the gallery, and learn about successful past events, which can be read about on the about page.  The contact form can be used to request a callback to discuss their requirements further.
+
+**Returning Visitors**
+
+- Returning visitors, perhaps who have already made a booking, would like to download a menu quickly.  This can be done using the menu download link in the footer.
 
 ### **Strategy**
 
-To create an attractive online presence for this business, giving users sufficicient info in the first instance, presented in a logical and appealing way, that they enquire further and ultimately make a booking.  
+To create an attractive online presence for this business, giving users sufficicient info in the first instance, presented in a logical and appealing way,that they enquire further and ultimately make a booking.  
 
 ### **Scope**
 
-The site will include a landing page, an about page with factual information about cababilities, the food and past events, a photo gallery page, a menu page with buttons for opening a downloadable menus as a pdf in a new window for each of the three catering options and a contact form.  Plus a quick downloadable menu/pricelist link in the footer on all except small mobile screens.
+The site will include:
+- A landing page with an attractive image, some introductory inforamtion and a learn more button.
+- An about page with factual information about cababilities, the food and past events, plus buttons to the menu, gallery and contact pages.
+- A photo gallery page with a button linking to the contact form.
+- A menu page with buttons for opening a downloadable menus as a pdf in a new window for each of the three catering options.
+- A contact form.  
+- A quick downloadable menu/pricelist link in the footer on all except small mobile screens.
 
 ### **Structure**
 
@@ -55,18 +65,36 @@ Links to the wireframes can be found here:
 
 - The imagery of food has been chosen to look as appetizing as possible.  The images of catering trailers have been chosen to look aesthetic and appealing for an event on the home page and practical and well equipped in the gallery.
 
+- Use has been made of font awesome icons to add to the visual appeal and intuitive understanding of the site.
+
 
 ## **Features**
 ---
 - The site is responsive on all devices.
 
-- It features:
-    * A navigation menu which collapses to a dropdown on mobiles.
-    * Buttons as an alternataive for navigating around the site or opening the menus in a new tab.
+- A navigation menu which collapses to a dropdown on mobiles.
+
+- Buttons throughout as an alternataive for navigating around the site.
+
+- An about page.
+
+- A photo gallery carousel.
+
+- A menu page with buttons to open pdf versions of the menus in a new tab.
+
+- A link to open a downloadable full menu in a new tab in the footer on all except small mobile screens.
+
+- Links to Facebook and Instagram in the footer.
+
+- Screen reader information and ARIA attributes where relevant.
 
 ## **Features left to implement**
 ---
-In the future I would like the content to drop below the navigation dropdown, to add some more subtle hover effects to the buttons and footer links and an animation when the homepage loads of the jumbotron entering the screen from the left.
+- Content to drop below the navigation dropdown.
+
+- Add some more subtle hover effects to the buttons and footer links. 
+
+- An animation when the homepage loads of the jumbotron entering the screen from the left.
 
 ## **Technologies Used**
 ---
@@ -102,32 +130,36 @@ In the future I would like the content to drop below the navigation dropdown, to
 - [GitHub:](https://github.com/)
     * GitHub is used to store the projects code after being pushed from Git.
 
-1. [Paint-X:](https://paint-x.com/)
+- [Paint-X:](https://paint-x.com/)
     - Photoshop was used to create the logo, cropping, resizing and adding a black ground to images used in the gallery carousel.
 
-1. [Balsamiq:](https://balsamiq.com/)
+- [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create wireframes for the skeleton phase of the design process.
 
 ## **Testing**
 ---
-
+### **Third Party Testing**
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
     * [W3C HTML Validator](https://validator.w3.org/nu/#textarea)
     * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
 
-- The Chrome [Lighthouse](https://developers.google.com/web/tools/lighthouse/) extension was used to audit the site.  A summary of the results is shown below:
+- The Chrome [Lighthouse](https://developers.google.com/web/tools/lighthouse/) extension was used to audit the site.  A summary of the results is can be viewed [here.](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/lighthouse-summary.pdf)
 
 ### **Testing User Stories**
 - **Users searching for party catering will want to learn about the food,  see the gallery pictures and download a menu/pricelist.**
-    It clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives general background information and buttons to see the menus with all dishes and prices detailed and the gallery containing attractive photos.  They can alternatively use the navbar to reach these pages and the contact form page if they wish to take the booking process further.
+    * It clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives general background information and buttons to see the menus with all dishes and prices detailed and the gallery containing attractive photos.  They can alternatively use the navbar to reach these pages and the contact form page if they wish to take the booking process further.
 
 - **Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to discuss their requirements further.**
-    Again, it clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives more info about business supply and an example of a current business being supplied.  There are also buttons to the menu and contact form, as in the navbar also.
+    * Again, it clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives more info about business supply and an example of a current business being supplied.  There are also buttons to the menu and contact form, as in the navbar also.
 
 - **Event organisers looking for a catering trailer will want to see photos, as on the landing page and in the gallery, and learn about successful past events, which can be read about on the about page.  The contact form can be used to request a callback to discuss requirements further.**
-    There is a lovely picture of the catering trailer on the home landing page which will hopefully inspire users to want it at their event and research the site further, which again can be easily done starting with the learn more page.  As all events are different the callback option on the contact form will be of particular use to discuss each event specifically.
+    * There is a lovely picture of the catering trailer on the home landing page which will aims to inspire users to want it at their event and research the site further, which again can be easily done starting with the learn more page.  As all events are different the callback option on the contact form will be of particular use to discuss each event specifically.
 
 - **Returning visitors, perhaps who have already made a booking, would like to download a menu quickly.  This can be done using the menu download link in the footer.**
+    * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab.
+
+###Manual Testing
+- The site has been tested on
     
 
 ## **Deployment**
@@ -137,3 +169,4 @@ In the future I would like the content to drop below the navigation dropdown, to
 
 
 
+https://webformatter.com/css
