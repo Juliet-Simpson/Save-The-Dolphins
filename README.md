@@ -4,10 +4,14 @@ Milestone One Project for Code Institute's Fullstack Software Development Diplom
 
 A five page website to promote a friend's Vegan Catering business, consisting of an inviting landing page, an about page giving more detailed information, a photo gallery page, a menu page and a contact form.  There is also the option to download a menu/pricelists as pdfs, plus links to social media pages.
 
-## **Demo** 
+## **Preview** 
 ---
 
-A live demo can be found here.
+The homepage on different devices is shown here:
+
+![Home Page Previews](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/preview.png "Home Page Previews")
+
+The deployed site on GitHub Pages can be viewed [here.](https://juliet-simpson.github.io/Conscious-Catering/)
 
 ## **UX**
 ---
@@ -96,6 +100,8 @@ Links to the wireframes can be found here:
 
 - An animation when the homepage loads of the jumbotron entering the screen from the left.
 
+- A requirement to check at least one of the three checkboxes on the contact form.  This requires JavaScript.
+
 ## **Technologies Used**
 ---
 ### **Languages:**
@@ -122,7 +128,7 @@ Links to the wireframes can be found here:
     * jQuery came with Bootstrap to make the navbar toggle on small screens work.
 
 - [popper.js](https://popper.js.org)
-    * popper.js came with Bootstrap and is used to make the hover transitions work.
+    * popper.js came with Bootstrap and is used for Bootstrap.
 
 - [Git](https://git-scm.com/)
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -147,26 +153,94 @@ Links to the wireframes can be found here:
 
 ### **Testing User Stories**
 - **Users searching for party catering will want to learn about the food,  see the gallery pictures and download a menu/pricelist.**
-    * It clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives general background information and buttons to see the menus with all dishes and prices detailed and the gallery containing attractive photos.  They can alternatively use the navbar to reach these pages and the contact form page if they wish to take the booking process further.
+    * It clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. 
+    * The LEARN MORE button navigates to the about page which gives general background information and buttons to the menu gallery and contact pages.  They can alternatively use the navbar to reach these pages.
+    * The gallery page has a carousel of attractive images that will automatically scroll through after a time delay or can be manually scroled with next and previous arrows. 
+    * The menu page shows all the menus clearly laid out and buttons which open downloadable menus as pdfs in new windows.
+    * Should they wish to make contact for more information they can link to the contact page from the navbar.
 
 - **Business owners would like to know about supply capabilities, details of which can be found in the about page.  The contact form is available to discuss their requirements further.**
-    * Again, it clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek by using the large inviting LEARN MORE button. They are then taken to the about page which gives more info about business supply and an example of a current business being supplied.  There are also buttons to the menu and contact form, as in the navbar also.
+    * Again, it clearly states in the jumbotron on the home landing page that party catering is available and users are invited to enter the site to find the information they seek via the large inviting LEARN MORE button. 
+    * The about page gives more info about business supply and an example of a current business being supplied.  There are also buttons to the menu and contact form, as in the navbar also.
+    * There is a checkbox on the contact form to indicate they are interested in business supply and also a text area they can optionally fill in with more details of their requirements.   The form will submit even if they choose not to write in this box.
+    * There is space on the contact form to leave a phone number if they would like a call back but again this is not required and the form will submit with this blank.
 
 - **Event organisers looking for a catering trailer will want to see photos, as on the landing page and in the gallery, and learn about successful past events, which can be read about on the about page.  The contact form can be used to request a callback to discuss requirements further.**
-    * There is a lovely picture of the catering trailer on the home landing page which will aims to inspire users to want it at their event and research the site further, which again can be easily done starting with the learn more page.  As all events are different the callback option on the contact form will be of particular use to discuss each event specifically.
+    * There is a lovely picture of the catering trailer on the home landing page which will aims to inspire users to want it at their event and research the site further, which again can be easily done starting with the learn more page.  
+    * Past events involving the catering trailer are mentioned on the about page.
+    * The gallery carousel shows two pictures of the catering trailer.  Also pictures of food which will be of interest.
+    * As all events are different the callback option on the contact form will be of particular use to discuss thir event specifically.
 
 - **Returning visitors, perhaps who have already made a booking, would like to download a menu quickly.  This can be done using the menu download link in the footer.**
-    * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab.
+    * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab and there are download and print buttons in the top right of the viewport.
 
-###Manual Testing
-- The site has been tested on
-    
+### Manual Testing
+
+- The site has been tested on Chrome, Safari and Firefox browsers and on iphones 6,7 and 8 and alcatel android.  In Safari, iOS and android the philosopher font was not loading for the copyright text in the footer.  This was because the text was within the icon element.  It was fixed by putting it in a separate p element.
+- Resposiveness has been tested by altering the browser window size and using the mobile view option in Chrome Dev tools.
+- Testing on full screen revealed the the about and contact page contents were sitting too high on the page and some more padding was added to address this.
+- It is possible that an unwanted horizontal scroll still exists on screen resolution 1920px x 1080px but not regularly having access to a screen big enough to view this I have not been able to test for it further.
+- All buttons and links throughout the site have been checked and they successfully lead to the correct destination.
+- The contact form will not submit without filling in both the full name and email fields.  The checkboxes and other fields are optional so the form will submit with these empty.
+- The navbar toggler dropdown successfully works on small screens and on a second click of the toggler icon it toggles back up.  The navigation links in the dropdown also work.
 
 ## **Deployment**
 ---
+- The site is deployed to GitHub Pages directly from the master branch using the following steps:
+
+    1. Log into GitHub and locate the [GitHub Repository](https://github.com/Juliet-Simpson/Conscious-Catering)
+
+    2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+
+    3. Scrolling down the Settings page until the "GitHub Pages" section is located.
+
+    4. Making sure the "Master Branch" is selected in the source dropdown box.
+
+    5. Pressing "Save".
+
+- The site can be cloned by typing `git clone https://github.com/Juliet-Simpson/Conscious-Catering.git` into the terminal of your chosen editor.  
+To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
+
 
 ## **Credits**
+---
+## **Content**
+- Inspiration for this site and the menu content was given to me by Henry Jowett.
+
+- All content on the home page and about page was written by me.
+
+## **Code**
+
+- [Bootstrap (version 4.5.3](https://getbootstrap.com/docs/4.5/getting-started/introduction/))
+    * The navbar and carousel code, adapted for this project.
+    * Responsiveness throughout.
+
+- Deployment instructions in this README were taken from Code Institute examples which can be found [here](https://github.com/Code-Institute-Solutions/SampleREADME) and [here.](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive)
+
+- All other code was written by me.
+
+- The CSS was formatted using this online [CSS formatter](https://webformatter.com/css).
+
+## **Media**
+
+- Food images are from the following stock image libraries:
+    - [Pexels](https://www.pexels.com/)
+    - [Unsplash](https://unsplash.com/)
+    - [Adobe Stock](https://stock.adobe.com/uk/)
+
+- Trailer images belong to Henry Jowett.
+
+- The Home Page Previews image in this readme was created by [Am I Responsive?](http://ami.responsivedesign.is/)
+
+## **Acknowledgements**
+
+- My Code Institute Mentor for invaluable insights and overseeing the entire project.
+
+- Code Institute Tutor Support for imense help, patience and knowledge.
+
+- Jim Morel from the Code Institute [Slack](https://slack.com/intl/en-gb/) community for help early on with the navbar and, in particular, targetting the nav items.
+
+- Henry Jowett for the concept.
 
 
 
-https://webformatter.com/css
