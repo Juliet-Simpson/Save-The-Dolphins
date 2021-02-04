@@ -49,7 +49,7 @@ The deployed site on GitHub Pages can be viewed [here.](https://juliet-simpson.g
 
 ### **Strategy**
 
-To create an attractive online presence for this business, giving users sufficicient info in the first instance, presented in a logical and appealing way,that they enquire further and ultimately make a booking.  
+To create an attractive online presence for this business, giving users sufficicient info in the first instance, presented in a logical and appealing way, that they enquire further and ultimately make a booking.  
 
 ### **Scope**
 
@@ -224,7 +224,7 @@ Links to the wireframes can be found here:
 
     * The gallery carousel shows two pictures of the catering trailer.  Also pictures of food which will be of interest.
 
-    * As all events are different the callback option on the contact form will be of particular use to discuss thier event specifically.
+    * As all events are different the callback option on the contact form will be of particular use to discuss their event specifically.
 
 - **Returning visitors who have already made a booking, would like to download a menu quickly:** 
     * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab and there are download and print buttons in the top right of the viewport.
@@ -238,7 +238,7 @@ Links to the wireframes can be found here:
     ![Facebook Link](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/fb-link-ss.png "Facebook Link")
 
 - **Returning visitor has booked in the past but lost Henry's contact details:**
-    * They can explain this in the contact form dialogue box nd submit the form again.
+    * They can explain this in the contact form dialogue box and submit the form again.
 
 ### Manual Testing
 
@@ -260,7 +260,7 @@ Links to the wireframes can be found here:
 
 - Testing on a mobile screen revealed that when the copyright text dropped onto more than one line some left padding was required.
 
-- Testing on a mobile screen that the dropdown was not readable on the Home screen due to the transparency of the navbar background color on this page.  A media query was added to make the colour solid on mobile screens.
+- Testing on a mobile screen revealed that the dropdown was not readable on the Home screen due to the transparency of the navbar background color on this page.  A media query was added to make the colour solid on mobile screens.
 
 ### Pending Issues
 
@@ -294,7 +294,7 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 ## **Content**
 - Inspiration for this site and the menu content was given to me by Henry Jowett.
 
-- All content on the home page and about page was written by me.
+- All content on the Home page and About page was written by me.
 
 ## **Code**
 
