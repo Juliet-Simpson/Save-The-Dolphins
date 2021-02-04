@@ -182,27 +182,34 @@ Links to the wireframes can be found here:
 ### **Testing User Stories**
 - **Users searching for party catering:**
     1. It clearly states in the jumbotron on the Home page that party catering is available.
+
         ![Jumbotron](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/home-ss.png "Home Page Screenshot")
 
     2. The LEARN MORE button on the Home page (see above image) leads to the About page which gives written information about the capabilities and food.
+
         ![About1](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/about1.png "About Page Screenshot 1")
     
     3. There is a photo carousel on the Gallery page with 12 attractive pictures of food.
+
         ![Gallery](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/gallery-ss.png "Gallery Page Screenshot")
 
     4. The Menu page shows the menus and prices, starting with party catering.
+
         ![Party Menu](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/party-menu-ss.png "Menu Page Screenshot1")
 
     5. There is a button at the bottom of the party menu on the Menu page which opens a downloadable copy as a pdf in a new tab if the user wishes to download it for further consideration.
-        ![Party Menu Button](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/party-menu-button.png "Party Menu Button")
+
+         ![Party Menu Button](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/party-menu-button.png "Party Menu Button")
 
    - **Business owners would like to know about supply capabilities and food:**
     1. Information is available on the About page (see above screenshot).
 
     2. It clearly states at the bottom of the Menu page that all food is available for business supply.
+
         ![Business Supply Screenshot](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/business-supply-ss.png "Business Supply Screenshot")
 
     3. The Contact form has an optional check box to indicate that business supply is of interest and an optional dialogue box to describe requirements.
+
         ![Contact Form Screenshot](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/contact-ss.png "Contact Form Screenshot")
     
     4. There are attractive food images in the Gallery.
@@ -212,6 +219,7 @@ Links to the wireframes can be found here:
     * There is a lovely picture of the catering trailer on the Home landing page (see above screenshot).
 
     * Past events involving the catering trailer are mentioned on the About page.
+
         ![About2](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/about2.png "About Page Screenshot 2")
 
     * The gallery carousel shows two pictures of the catering trailer.  Also pictures of food which will be of interest.
@@ -220,7 +228,7 @@ Links to the wireframes can be found here:
 
 - **Returning visitors who have already made a booking, would like to download a menu quickly:** 
     * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab and there are download and print buttons in the top right of the viewport.
-    
+
     ![Quick Menu](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/quick-menu-ss.png "Menu Link Screenshot")
     ![Menu pdf](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/menu-pdf-ss.png "Menu pdf")
 
