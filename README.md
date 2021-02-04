@@ -130,6 +130,7 @@ Links to the wireframes can be found here:
 ## **Technologies Used**
 ---
 ### **Languages:**
+
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
@@ -173,6 +174,7 @@ Links to the wireframes can be found here:
 ## **Testing**
 ---
 ### **Third Party Tools/Services**
+
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
     * [W3C HTML Validator](https://validator.w3.org/nu/#textarea)
     * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
@@ -180,7 +182,9 @@ Links to the wireframes can be found here:
 - The Chrome [Lighthouse](https://developers.google.com/web/tools/lighthouse/) extension was used to audit the site.  A summary of the results is can be viewed [here.](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/lighthouse-summary.pdf)
 
 ### **Testing User Stories**
+
 - **Users searching for party catering:**
+
     1. It clearly states in the jumbotron on the Home page that party catering is available.
 
         ![Jumbotron](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/home-ss.png "Home Page Screenshot")
@@ -202,6 +206,7 @@ Links to the wireframes can be found here:
          ![Party Menu Button](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/party-menu-button.png "Party Menu Button")
 
    - **Business owners would like to know about supply capabilities and food:**
+
     1. Information is available on the About page (see above screenshot).
 
     2. It clearly states at the bottom of the Menu page that all food is available for business supply.
@@ -216,6 +221,7 @@ Links to the wireframes can be found here:
 
 
 - **Event organisers looking for a catering trailer will want to see photos, learn about successful past events and request a callback to discuss requirements further:**
+
     * There is a lovely picture of the catering trailer on the Home landing page (see above screenshot).
 
     * Past events involving the catering trailer are mentioned on the About page.
@@ -316,13 +322,14 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 ## **Acknowledgements**
 
+- Henry Jowett for the concept.
+
 - My Code Institute Mentor for invaluable insights and overseeing the entire project.
 
 - Code Institute Tutor Support for immense help, patience and knowledge.
 
 - Jim Morel from the Code Institute [Slack](https://slack.com/intl/en-gb/) community for help early on with the navbar.
 
-- Henry Jowett for the concept.
 
 
 
