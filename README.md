@@ -220,11 +220,13 @@ Links to the wireframes can be found here:
 
 - **Returning visitors who have already made a booking, would like to download a menu quickly:** 
     * The menu downloadlink in the footer successfully opens a pdf version of the full menu in a new browser tab and there are download and print buttons in the top right of the viewport.
+    
     ![Quick Menu](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/quick-menu-ss.png "Menu Link Screenshot")
     ![Menu pdf](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/menu-pdf-ss.png "Menu pdf")
 
 - **Returning visitors would like to write a review:**
     * There is a link to Facebook in the footer where a review can be written.
+
     ![Facebook Link](https://github.com/Juliet-Simpson/Conscious-Catering/blob/master/assets/images/readme/fb-link-ss.png "Facebook Link")
 
 - **Returning visitor has booked in the past but lost Henry's contact details:**
