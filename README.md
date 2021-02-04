@@ -268,9 +268,6 @@ Links to the wireframes can be found here:
 
 - On some screen resolutions there is a small amount of vertical scroll on the About page.
 
-- After opening the menus in a new tab then returning to the main Menu page, the menu buttons remain on their hover colour until clicking somewhere on that screen.
-
-
 ## **Deployment**
 ---
 - The site is deployed to GitHub Pages directly from the master branch using the following steps:
