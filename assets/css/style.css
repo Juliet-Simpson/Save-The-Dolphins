@@ -101,7 +101,7 @@ li.nav-item {
 
 @media only screen and (min-width: 270px) {
     .jumbotron {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
@@ -109,7 +109,7 @@ li.nav-item {
     .jumbotron {
         margin-left: 3rem;
         margin-top: 6rem;
-        font-size: 110%;
+        font-size: 100%;
     }
 }
 
