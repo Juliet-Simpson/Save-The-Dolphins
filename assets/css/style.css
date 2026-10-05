@@ -1019,11 +1019,12 @@ h3 {
         align-items: flex-start;
         min-height: 38rem;
         padding: 2.5rem var(--page-gutter) 7rem;
-        background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.5), rgba(8, 44, 58, 0.22)), url("../images/home-image.png");
+        background-image: url("../images/home-image.png");
     }
 
     .hero-content {
         width: min(100%, 37rem);
+        margin-top: clamp(15rem, 39svh, 19rem);
         margin-left: auto;
         margin-right: 0;
         text-align: right;
@@ -1110,6 +1111,10 @@ h3 {
     .home-hero {
         min-height: 36rem;
         padding: 2rem var(--page-gutter) 6rem;
+    }
+
+    .hero-content {
+        margin-top: clamp(15rem, 39svh, 18rem);
     }
 
     .hero-actions {
