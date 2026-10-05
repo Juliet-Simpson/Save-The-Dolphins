@@ -1024,6 +1024,7 @@ h3 {
         min-height: 38rem;
         padding: 2.5rem var(--page-gutter) 7rem;
         background-image: url("../images/home-image.png");
+        background-position: left 66.6667%;
     }
 
     .hero-content {
