@@ -1041,7 +1041,7 @@ h3 {
 
     .home-hero .hero-title .eyebrow {
         font-size: 110%;
-        text-shadow: 0 1px 3px rgba(4, 30, 39, 0.6);
+        text-shadow: none;
     }
 
     .hero-title h1 {
@@ -1137,10 +1137,6 @@ h3 {
 
     .hero-title {
         top: 1.25%;
-    }
-
-    .home-hero .hero-title .eyebrow {
-        text-shadow: none;
     }
 
     .hero-title h1 {
