@@ -132,15 +132,16 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: clamp(0.8rem, 2.4vw, 2.1rem);
+    gap: clamp(0.55rem, 1.65vw, 1.5rem);
 }
 
 .site-nav a {
     padding: 0.5rem 0;
     color: var(--ink);
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -152,16 +153,28 @@ h3 {
     box-shadow: inset 0 -2px var(--water);
 }
 
+.site-nav a.nav-donate {
+    padding: 0.55rem 0.9rem;
+    border-radius: 0.15rem;
+    color: var(--white);
+    background: var(--river);
+}
+
+.site-nav a.nav-donate:hover {
+    color: var(--white);
+    background: var(--river-deep);
+}
+
 .home-hero {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: min(48rem, calc(100svh - 5.3rem));
-    padding: clamp(4rem, 9vw, 8rem) var(--page-gutter);
+    min-height: min(39rem, calc(78svh - 5.3rem));
+    padding: clamp(2rem, 5vw, 4rem) var(--page-gutter);
     overflow: hidden;
     color: var(--white);
     background-color: var(--river-deep);
-    background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.04) 0%, rgba(8, 44, 58, 0.22) 42%, rgba(8, 44, 58, 0.9) 100%), url("../images/home-image.png");
+    background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.02) 0%, rgba(8, 44, 58, 0.06) 44%, rgba(8, 44, 58, 0.74) 100%), url("../images/home-image.png");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,15 +182,19 @@ h3 {
 
 .hero-content {
     position: relative;
-    width: min(100%, 47rem);
+    width: min(48%, 37rem);
     margin-left: auto;
     margin-right: max(0px, calc((100vw - var(--content-width)) / 2 - var(--page-gutter)));
+    padding: clamp(1.25rem, 2.8vw, 2.5rem);
+    border-left: 3px solid var(--turquoise);
+    background: rgba(8, 44, 58, 0.88);
 }
 
 .hero-content h1 {
-    max-width: 12ch;
-    margin-bottom: 1.5rem;
+    max-width: 11ch;
+    margin-bottom: 0.9rem;
     color: var(--white);
+    font-size: clamp(2.5rem, 5.4vw, 4.5rem);
 }
 
 .eyebrow {
@@ -191,20 +208,14 @@ h3 {
 }
 
 .home-hero .eyebrow {
-    color: var(--turquoise);
+    color: #d8f0e8;
 }
 
 .hero-copy {
-    max-width: 37rem;
-    margin-bottom: 2rem;
+    max-width: 31rem;
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
-    font-size: clamp(1.1rem, 2vw, 1.35rem);
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+    font-size: clamp(1rem, 1.55vw, 1.2rem);
 }
 
 .button {
@@ -254,18 +265,6 @@ h3 {
 .button-primary:hover {
     color: var(--white);
     background: var(--river-deep);
-}
-
-.hero-credit {
-    position: absolute;
-    right: var(--page-gutter);
-    bottom: 1.1rem;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.78rem;
-}
-
-.hero-credit:hover {
-    color: var(--white);
 }
 
 .section {
@@ -384,6 +383,99 @@ h3 {
 .section-gallery-preview {
     max-width: calc(var(--content-width) + 2 * var(--page-gutter));
     margin-inline: auto;
+}
+
+.home-intro {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.9fr) minmax(20rem, 1.5fr) minmax(12rem, 0.8fr);
+    align-items: center;
+    gap: clamp(1rem, 3vw, 3rem);
+    max-width: calc(var(--content-width) + 2 * var(--page-gutter));
+    margin-inline: auto;
+    padding: 2rem var(--page-gutter);
+}
+
+.home-intro .eyebrow {
+    margin-bottom: 0.45rem;
+}
+
+.home-intro h2 {
+    margin: 0;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+.home-intro > p:not(.home-fact) {
+    margin: 0;
+    color: #4e6267;
+    font-size: 0.95rem;
+}
+
+.home-fact {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    border-left: 2px solid var(--water);
+    color: var(--river-deep);
+    background: var(--mist);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.home-contact {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(20rem, 1fr);
+    gap: clamp(2rem, 7vw, 7rem);
+    padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter);
+    background: var(--mist);
+    scroll-margin-top: 6rem;
+}
+
+.home-contact .contact-intro {
+    margin-left: max(0px, calc((100vw - var(--content-width)) / 2 - var(--page-gutter)));
+}
+
+.home-contact .contact-intro h2 {
+    margin-bottom: 0.8rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.home-contact .contact-intro > p:last-child {
+    color: #4e6267;
+}
+
+.home-contact .contact-form {
+    max-width: 38rem;
+}
+
+.home-contact .form-field {
+    margin-bottom: 0.8rem;
+}
+
+.home-gallery {
+    padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter);
+    scroll-margin-top: 6rem;
+}
+
+.home-gallery-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto 1.5rem;
+}
+
+.home-gallery-heading .eyebrow {
+    margin-bottom: 0.5rem;
+}
+
+.home-gallery-heading h2 {
+    margin-bottom: 0;
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+}
+
+.home-gallery-heading > p {
+    margin-bottom: 0.25rem;
+    color: #4e6267;
 }
 
 .section-heading-inline {
@@ -791,20 +883,34 @@ h3 {
     }
 
     .home-hero {
-        min-height: 38rem;
-        background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.56), rgba(8, 44, 58, 0.8)), url("../images/home-image.png");
-        background-position: left center;
+        min-height: 34rem;
+        background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.35), rgba(8, 44, 58, 0.75)), url("../images/home-image.png");
     }
 
     .hero-content {
-        margin: 0;
+        width: min(88%, 34rem);
+        margin-left: auto;
+        margin-right: 0;
     }
 
     .section-intro,
     .content-layout,
     .content-layout-reverse,
-    .contact-section {
+    .contact-section,
+    .home-contact {
         grid-template-columns: 1fr;
+    }
+
+    .home-intro {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-fact {
+        grid-column: 1 / -1;
+    }
+
+    .home-contact .contact-intro {
+        margin-left: 0;
     }
 
     .content-layout-reverse .content-copy {
@@ -852,7 +958,26 @@ h3 {
 
 @media (max-width: 500px) {
     .home-hero {
-        min-height: 34rem;
+        min-height: 31rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .home-intro {
+        grid-template-columns: 1fr;
+        padding-block: 1.5rem;
+    }
+
+    .home-fact {
+        grid-column: auto;
+    }
+
+    .home-gallery-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .hero-actions {
@@ -894,6 +1019,15 @@ h3 {
 
     .footer-actions {
         gap: 1rem;
+    }
+
+    html {
+        scroll-padding-top: 10rem;
+    }
+
+    .home-contact,
+    .home-gallery {
+        scroll-margin-top: 9rem;
     }
 }
 
