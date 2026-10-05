@@ -217,7 +217,7 @@ h3 {
 
 .home-hero .eyebrow {
     color: var(--turquoise);
-    text-shadow: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
 }
 
 @media (min-width: 901px) {
@@ -1047,7 +1047,6 @@ h3 {
 
     .home-hero .hero-title .eyebrow {
         font-size: 110%;
-        text-shadow: none;
     }
 
     .hero-title h1 {
@@ -1146,7 +1145,7 @@ h3 {
     }
 
     .home-hero .hero-title .eyebrow {
-        transform: translateY(3.5rem);
+        transform: translateY(2.45rem);
     }
 
     .hero-title h1 {
