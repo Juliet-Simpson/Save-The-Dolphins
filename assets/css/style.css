@@ -220,6 +220,12 @@ h3 {
     text-shadow: none;
 }
 
+@media (min-width: 901px) {
+    .home-hero .eyebrow {
+        font-size: 115%;
+    }
+}
+
 .hero-copy {
     max-width: 31rem;
     margin-left: auto;
@@ -1136,7 +1142,11 @@ h3 {
     }
 
     .hero-title {
-        top: 1.25%;
+        top: 6.25%;
+    }
+
+    .home-hero .hero-title .eyebrow {
+        transform: translateY(3.5rem);
     }
 
     .hero-title h1 {
