@@ -1136,7 +1136,11 @@ h3 {
     }
 
     .hero-title {
-        top: 11.25%;
+        top: 1.25%;
+    }
+
+    .home-hero .hero-title .eyebrow {
+        text-shadow: none;
     }
 
     .hero-title h1 {
