@@ -13,7 +13,10 @@
         <a class="brand" href="index.html" aria-label="Save the Ganges River Dolphin home">
             <img src="assets/images/logo.png" alt="">
         </a>
-        <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation">
+            <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
             <a class="is-current" href="index.html" aria-current="page">Home</a>
             <a href="about.html">The Dolphin &amp; River</a>
             <a href="story.html">The Mission</a>
@@ -29,23 +32,27 @@
                 <p class="eyebrow">A River Worth Protecting</p>
                 <h1>Save the Ganges River Dolphin</h1>
                 <p class="hero-copy">The Ganges river dolphin is one of the world’s rare freshwater dolphins. Its future is bound to its river habitat.</p>
+                <div class="hero-actions">
+                    <a class="button button-light" href="about.html">Meet the dolphin</a>
+                    <a class="button button-outline" href="story.html">Explore the mission</a>
+                </div>
             </div>
         </section>
 
         <section class="home-intro" aria-label="About the project">
-            <div>
-                <p class="eyebrow">A remarkable river mammal</p>
+            <div class="home-intro-heading">
+                <p class="eyebrow">A Remarkable River Mammal</p>
                 <h2>A life shaped by the Ganges</h2>
             </div>
-            <p>The Gangetic dolphin navigates the river’s silty waters using sound. Pollution, dams, fishing nets and the growing demand for river water all put pressure on its habitat.</p>
+            <p class="home-intro-copy">The Ganges River Dolphin is one of only three freshwater dolphin species remaining, following the extinction of the Yangtze dolphin. Once present in tens of thousands, its numbers have fallen—from an estimated 4,500 in 1982 to around 1,800. Dams, pollution and the depletion of river water all threaten its survival. The dolphin navigates the Ganges’ silty waters using sound; its future is bound to the health of this river habitat.</p>
             <p class="home-fact">India’s National Aquatic Animal</p>
         </section>
 
         <section class="home-contact" id="contact">
             <div class="contact-intro">
-                <p class="eyebrow">Be part of the project</p>
+                <p class="eyebrow">Be Part of the Project</p>
                 <h2>Get in touch</h2>
-                <p>If you would like to get in touch with Luke about this project for any reason, please use the form below.</p>
+                <p>If you would like to get in touch with Luke about this project for any reason, please use this form.</p>
             </div>
             <form class="contact-form" name="contact" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" data-contact-form>
                 <input type="hidden" name="form-name" value="contact">
@@ -72,8 +79,8 @@
         <section class="home-gallery" id="gallery" aria-labelledby="home-gallery-title">
             <div class="home-gallery-heading">
                 <div>
-                    <p class="eyebrow">In pictures</p>
-                    <h2 id="home-gallery-title">Gangetic Dolphin Gallery</h2>
+                    <p class="eyebrow">In Pictures</p>
+                    <h2 id="home-gallery-title">Ganges River Dolphin Gallery</h2>
                 </div>
                 <p>Photographs from the project.</p>
             </div>
@@ -100,14 +107,16 @@
                 <p>For a healthier river and a future for its wildlife.</p>
             </div>
             <div class="footer-actions">
+                <a class="footer-donate nav-donate" href="https://gofund.me/9d7be865" target="_blank" rel="noopener noreferrer">Donate <span aria-hidden="true">↗</span></a>
                 <a href="https://www.facebook.com/Save-the-Gangetic-Dolphin-110967557847546/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://www.instagram.com/lukeandtuke/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>For a healthier river and a future for its wildlife.</span>
+            <span>Website by julietSDesign</span>
         </div>
     </footer>
     <script src="assets/js/contact-form.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
 </body>
 </html>

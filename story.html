@@ -13,7 +13,10 @@
         <a class="brand" href="index.html" aria-label="Save the Ganges River Dolphin home">
             <img src="assets/images/logo.png" alt="">
         </a>
-        <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation">
+            <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">The Dolphin &amp; River</a>
             <a class="is-current" href="story.html" aria-current="page">The Mission</a>
@@ -92,13 +95,15 @@
                 <p>For a healthier river and a future for its wildlife.</p>
             </div>
             <div class="footer-actions">
+                <a class="footer-donate nav-donate" href="https://gofund.me/9d7be865" target="_blank" rel="noopener noreferrer">Donate <span aria-hidden="true">↗</span></a>
                 <a href="https://www.facebook.com/Save-the-Gangetic-Dolphin-110967557847546/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://www.instagram.com/lukeandtuke/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>For a healthier river and a future for its wildlife.</span>
+            <span>Website by julietSDesign</span>
         </div>
     </footer>
+    <script src="assets/js/nav.js" defer></script>
 </body>
 </html>
