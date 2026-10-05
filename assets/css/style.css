@@ -4,7 +4,7 @@
     --river-deep: #0b3d50;
     --river: #12677a;
     --water: #236e78;
-    --turquoise: #9bcfc8;
+    --turquoise: #49c982;
     --foam: #f6f6ef;
     --mist: #e7f0ed;
     --bank: #d8c9a8;
@@ -216,7 +216,7 @@ h3 {
 }
 
 .home-hero .eyebrow {
-    color: #42d6ad;
+    color: var(--turquoise);
     text-shadow: none;
 }
 
@@ -1033,7 +1033,7 @@ h3 {
 
     .hero-title {
         position: absolute;
-        top: 1.5rem;
+        top: 11.5%;
         right: var(--page-gutter);
         left: var(--page-gutter);
         text-align: right;
@@ -1043,11 +1043,12 @@ h3 {
         max-width: 14ch;
         margin-left: auto;
         margin-right: 0;
+        font-size: clamp(3rem, 6vw, 4rem);
     }
 
     .hero-copy {
         position: absolute;
-        top: 50%;
+        top: 60%;
         right: var(--page-gutter);
         width: 52%;
         max-width: 18rem;
@@ -1128,11 +1129,15 @@ h3 {
     }
 
     .hero-title {
-        top: 1.25rem;
+        top: 11.25%;
+    }
+
+    .hero-title h1 {
+        font-size: clamp(2.5rem, 10vw, 3rem);
     }
 
     .hero-copy {
-        top: 52%;
+        top: 62%;
     }
 
     .hero-actions {
