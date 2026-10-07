@@ -796,42 +796,134 @@ h3 {
     padding: clamp(2rem, 5vw, 4rem) var(--page-gutter) clamp(4rem, 7vw, 6rem);
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(0.6rem, 1.5vw, 1.3rem);
-    max-width: var(--content-width);
-    margin-inline: auto;
+.gallery-carousel {
+    max-width: 78rem;
+    margin: 0 auto;
 }
 
-.gallery-tile {
+.gallery-track {
+    --gallery-slide-width: min(76vw, 54rem);
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem max(0px, calc((100% - var(--gallery-slide-width)) / 2)) 1rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery-track::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-slide {
+    display: grid;
+    flex: 0 0 var(--gallery-slide-width);
+    place-items: center;
+    height: 22rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+    scroll-snap-align: center;
+}
+
+.gallery-slide img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: 0 0.5rem 1.5rem rgba(11, 61, 80, 0.16);
+    transition: transform 180ms ease;
+}
+
+.gallery-slide:hover img {
+    transform: scale(1.015);
+}
+
+.gallery-controls {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 0;
-    aspect-ratio: 4 / 3;
-    padding: 0.6rem;
-    overflow: hidden;
-    background: #e9eeea;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
 }
 
-.gallery-tile:nth-child(5n + 2) {
-    grid-column: span 2;
-    aspect-ratio: 8 / 3;
+.gallery-control {
+    min-height: 2.5rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid rgba(21, 59, 73, 0.24);
+    border-radius: 0.2rem;
+    color: var(--river-deep);
+    background: var(--foam);
+    font: inherit;
+    font-size: 0.86rem;
+    cursor: pointer;
 }
 
-.gallery-tile img {
-    width: 100%;
-    height: 100%;
+.gallery-control:hover {
+    background: var(--white);
+}
+
+.gallery-count {
+    min-width: 3.5rem;
+    color: var(--ink);
+    font-size: 0.86rem;
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+}
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    width: fit-content;
+    height: fit-content;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100svh - 2rem);
+    margin: auto;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+}
+
+.gallery-lightbox::backdrop {
+    background: rgba(3, 17, 23, 0.88);
+    backdrop-filter: blur(0.4rem);
+}
+
+.gallery-lightbox img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(92vw, 85rem);
+    max-height: 90svh;
     object-fit: contain;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.55);
 }
 
-.gallery-tile:hover img {
-    transform: scale(1.025);
-}
-
-.gallery-tile img {
-    transition: transform 180ms ease;
+.gallery-lightbox-close {
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    color: var(--white);
+    background: rgba(3, 17, 23, 0.55);
+    font: inherit;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .site-footer {
@@ -1116,15 +1208,6 @@ h3 {
         margin-bottom: 1rem;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .gallery-tile:nth-child(5n + 2) {
-        grid-column: span 2;
-        aspect-ratio: 8 / 3;
-    }
-
     .contact-intro {
         margin-left: 0;
     }
@@ -1190,6 +1273,24 @@ h3 {
         gap: 0.5rem;
     }
 
+    .gallery-track {
+        --gallery-slide-width: 84vw;
+    }
+
+    .gallery-slide {
+        height: 16rem;
+    }
+
+    .gallery-controls {
+        gap: 0.45rem;
+    }
+
+    .gallery-control {
+        min-height: 2.35rem;
+        padding-inline: 0.6rem;
+        font-size: 0.78rem;
+    }
+
     .section-heading-inline,
     .footer-main,
     .footer-bottom {
@@ -1209,16 +1310,6 @@ h3 {
 
     .story-mark {
         font-size: 4rem;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-tile,
-    .gallery-tile:nth-child(5n + 2) {
-        grid-column: auto;
-        aspect-ratio: 4 / 3;
     }
 
     .footer-actions {

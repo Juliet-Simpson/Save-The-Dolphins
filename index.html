@@ -58,19 +58,53 @@
                 </div>
                 <p>Photographs from the project.</p>
             </div>
-            <div class="gallery-grid">
-                <a class="gallery-tile" href="assets/images/gallery/dolphin1.png"><img src="assets/images/gallery/dolphin1.png" alt="Gangetic dolphin gallery image 1" fetchpriority="high"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin2.png"><img src="assets/images/gallery/dolphin2.png" alt="Gangetic dolphin gallery image 2" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin3.png"><img src="assets/images/gallery/dolphin3.png" alt="Gangetic dolphin gallery image 3" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin4.png"><img src="assets/images/gallery/dolphin4.png" alt="Gangetic dolphin gallery image 4" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin5.png"><img src="assets/images/gallery/dolphin5.png" alt="Gangetic dolphin gallery image 5" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin6.png"><img src="assets/images/gallery/dolphin6.png" alt="Gangetic dolphin gallery image 6" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin7.png"><img src="assets/images/gallery/dolphin7.png" alt="Gangetic dolphin gallery image 7" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin8.png"><img src="assets/images/gallery/dolphin8.png" alt="Gangetic dolphin gallery image 8" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin9.png"><img src="assets/images/gallery/dolphin9.png" alt="Gangetic dolphin gallery image 9" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin10.png"><img src="assets/images/gallery/dolphin10.png" alt="Gangetic dolphin gallery image 10" loading="lazy"></a>
-                <a class="gallery-tile" href="assets/images/gallery/dolphin11.png"><img src="assets/images/gallery/dolphin11.png" alt="Gangetic dolphin gallery image 11" loading="lazy"></a>
+            <div class="gallery-carousel" role="region" aria-roledescription="carousel" aria-label="Ganges River Dolphin photographs">
+                <div class="gallery-track" tabindex="0" aria-label="Swipe or scroll through photographs">
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 1 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin1.png" alt="Ganges river dolphin photograph 1" fetchpriority="high">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 2 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin2.png" alt="Ganges river dolphin photograph 2" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 3 of 11">
+                        <img src="assets/images/gallery/dolphin3.png" alt="Ganges river dolphin photograph 3" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 4 of 11">
+                        <img src="assets/images/gallery/dolphin4.png" alt="Ganges river dolphin photograph 4" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 5 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin5.png" alt="Ganges river dolphin photograph 5" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 6 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin6.png" alt="Ganges river dolphin photograph 6" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 7 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin7.png" alt="Ganges river dolphin photograph 7" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 8 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin8.png" alt="Ganges river dolphin photograph 8" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 9 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin9.png" alt="Ganges river dolphin photograph 9" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 10 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin10.png" alt="Ganges river dolphin photograph 10" loading="lazy">
+                    </button>
+                    <button class="gallery-slide" type="button" aria-label="Enlarge photograph 11 of 11">
+                        <img src="assets/images/gallery/cropped/dolphin11.png" alt="Ganges river dolphin photograph 11" loading="lazy">
+                    </button>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-control" type="button" data-gallery-previous aria-label="Previous photograph">Previous</button>
+                    <button class="gallery-control gallery-autoplay" type="button" data-gallery-autoplay aria-pressed="false">Pause slideshow</button>
+                    <span class="gallery-count" aria-live="off">1 / 11</span>
+                    <button class="gallery-control" type="button" data-gallery-next aria-label="Next photograph">Next</button>
+                </div>
             </div>
+            <dialog class="gallery-lightbox" aria-label="Enlarged gallery photograph">
+                <button class="gallery-lightbox-close" type="button" aria-label="Close enlarged photograph">&times;</button>
+                <img alt="">
+            </dialog>
         </section>
 
         <section class="home-contact" id="contact">
@@ -120,5 +154,6 @@
     </footer>
     <script src="assets/js/contact-form.js" defer></script>
     <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
 </body>
 </html>
