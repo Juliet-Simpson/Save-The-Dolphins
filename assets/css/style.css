@@ -472,7 +472,7 @@ h3 {
     grid-template-columns: minmax(0, 0.8fr) minmax(20rem, 1fr);
     gap: clamp(2rem, 7vw, 7rem);
     padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter);
-    background: var(--mist);
+    background: var(--foam);
     scroll-margin-top: 6rem;
 }
 
@@ -514,6 +514,7 @@ h3 {
 
 .home-gallery {
     padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter);
+    background: var(--mist);
     scroll-margin-top: 6rem;
 }
 
