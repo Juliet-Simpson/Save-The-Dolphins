@@ -4,7 +4,7 @@
     --river-deep: #0b3d50;
     --river: #12677a;
     --water: #236e78;
-    --turquoise: #24b56a;
+    --turquoise: #2cb4be;
     --foam: #f6f6ef;
     --mist: #e7f0ed;
     --bank: #d8c9a8;
@@ -1158,6 +1158,7 @@ h3 {
 
     .hero-copy {
         top: 62%;
+        font-weight: 700;
     }
 
     .hero-actions {

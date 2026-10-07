@@ -11,11 +11,14 @@ if (navToggle && siteNav) {
         }
     };
 
-    navToggle.addEventListener("click", () => {
+    navToggle.addEventListener("click", (event) => {
         const isOpen = navToggle.getAttribute("aria-expanded") === "true";
         navToggle.setAttribute("aria-expanded", String(!isOpen));
         navToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
         siteNav.classList.toggle("is-open", !isOpen);
+        if (event.detail > 0) {
+            navToggle.blur();
+        }
     });
 
     siteNav.addEventListener("click", (event) => {
