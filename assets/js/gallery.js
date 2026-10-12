@@ -9,7 +9,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     const previousButton = gallery.querySelector("[data-gallery-previous]");
     const nextButton = gallery.querySelector("[data-gallery-next]");
     const autoplayButton = gallery.querySelector("[data-gallery-autoplay]");
-    const count = gallery.querySelector(".gallery-count");
     const lightboxImage = galleryLightbox.querySelector("img");
     const lightboxClose = galleryLightbox.querySelector(".gallery-lightbox-close");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -18,14 +17,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     let pointerInside = false;
     let focusInside = false;
     let autoplayTimer;
-
-    const updateCount = () => {
-        count.textContent = `${activeIndex + 1} / ${gallerySlides.length}`;
-    };
-
-    const updateCountAnnouncements = () => {
-        count.setAttribute("aria-live", paused || focusInside ? "polite" : "off");
-    };
 
     const updateActiveIndex = () => {
         const center = galleryTrack.getBoundingClientRect().left + galleryTrack.clientWidth / 2;
@@ -38,7 +29,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
                 ? index
                 : closestIndex;
         }, 0);
-        updateCount();
     };
 
     const goToSlide = (index) => {
@@ -49,7 +39,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
             left,
             behavior: reducedMotion.matches ? "auto" : "smooth",
         });
-        updateCount();
     };
 
     const syncAutoplay = () => {
@@ -69,10 +58,9 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
 
     const setPaused = (shouldPause) => {
         paused = shouldPause;
-        autoplayButton.textContent = paused ? "Play slideshow" : "Pause slideshow";
         autoplayButton.setAttribute("aria-label", paused ? "Play slideshow" : "Pause slideshow");
         autoplayButton.setAttribute("aria-pressed", String(paused));
-        updateCountAnnouncements();
+        autoplayButton.dataset.paused = String(paused);
         syncAutoplay();
     };
 
@@ -91,13 +79,11 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     });
     gallery.addEventListener("focusin", () => {
         focusInside = true;
-        updateCountAnnouncements();
         syncAutoplay();
     });
     gallery.addEventListener("focusout", (event) => {
         if (!gallery.contains(event.relatedTarget)) {
             focusInside = false;
-            updateCountAnnouncements();
             syncAutoplay();
         }
     });
@@ -127,7 +113,5 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
         }
     });
 
-    updateCount();
-    updateCountAnnouncements();
-    syncAutoplay();
+    setPaused(paused);
 }

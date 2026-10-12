@@ -95,10 +95,16 @@
                     </button>
                 </div>
                 <div class="gallery-controls">
-                    <button class="gallery-control" type="button" data-gallery-previous aria-label="Previous photograph">Previous</button>
-                    <button class="gallery-control gallery-autoplay" type="button" data-gallery-autoplay aria-pressed="false">Pause slideshow</button>
-                    <span class="gallery-count" aria-live="off">1 / 11</span>
-                    <button class="gallery-control" type="button" data-gallery-next aria-label="Next photograph">Next</button>
+                    <button class="gallery-control" type="button" data-gallery-previous aria-label="Previous photograph">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"></path></svg>
+                    </button>
+                    <button class="gallery-control gallery-autoplay" type="button" data-gallery-autoplay aria-label="Pause slideshow" aria-pressed="false">
+                        <svg class="gallery-pause-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"></path></svg>
+                        <svg class="gallery-play-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 5 11 7-11 7z"></path></svg>
+                    </button>
+                    <button class="gallery-control" type="button" data-gallery-next aria-label="Next photograph">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
                 </div>
             </div>
             <dialog class="gallery-lightbox" aria-label="Enlarged gallery photograph">
