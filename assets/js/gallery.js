@@ -10,7 +10,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     const nextButton = gallery.querySelector("[data-gallery-next]");
     const autoplayButton = gallery.querySelector("[data-gallery-autoplay]");
     const lightboxImage = galleryLightbox.querySelector("img");
-    const lightboxClose = galleryLightbox.querySelector(".gallery-lightbox-close");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let activeIndex = 0;
     let paused = reducedMotion.matches;
@@ -32,12 +31,13 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     };
 
     const goToSlide = (index) => {
+        const wrapped = index < 0 || index >= gallerySlides.length;
         activeIndex = (index + gallerySlides.length) % gallerySlides.length;
         const slide = gallerySlides[activeIndex];
         const left = slide.offsetLeft - (galleryTrack.clientWidth - slide.offsetWidth) / 2;
         galleryTrack.scrollTo({
             left,
-            behavior: reducedMotion.matches ? "auto" : "smooth",
+            behavior: wrapped || reducedMotion.matches ? "auto" : "smooth",
         });
     };
 
@@ -94,12 +94,10 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
             lightboxImage.src = image.src;
             lightboxImage.alt = image.alt;
             galleryLightbox.showModal();
-            lightboxClose.focus();
             syncAutoplay();
         });
     });
 
-    lightboxClose.addEventListener("click", () => galleryLightbox.close());
     galleryLightbox.addEventListener("click", (event) => {
         if (event.target === galleryLightbox) {
             galleryLightbox.close();
