@@ -25,7 +25,7 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
         ).matches;
         const maxWidth = Math.max(1, galleryTrack.clientWidth - (isSmallScreen ? 96 : 128));
         const maxHeight = Math.min(
-            window.innerHeight * (isSmallScreen ? 0.58 : isCompactDesktop ? 0.5 : 0.7),
+            window.innerHeight * (isSmallScreen ? 0.58 : isCompactDesktop ? 0.54 : 0.7),
             isSmallScreen ? 480 : isCompactDesktop ? 480 : 640,
             maxWidth * (isSmallScreen ? 0.68 : 0.75),
         );

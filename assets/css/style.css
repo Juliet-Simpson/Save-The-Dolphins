@@ -541,11 +541,11 @@ h3 {
 
 @media (min-width: 901px) and (max-height: 900px) {
     .home-gallery {
-        padding-block: clamp(1.25rem, 3vh, 2.25rem) calc(clamp(1.25rem, 3vh, 2.25rem) + 2.4rem);
+        padding-block: clamp(1.25rem, 3vh, 2.25rem) calc(clamp(1.25rem, 3vh, 2.25rem) + 1.2rem);
     }
 
     .home-gallery-heading {
-        margin-bottom: 3.4rem;
+        margin-bottom: 2.2rem;
     }
 
     .gallery-carousel {
