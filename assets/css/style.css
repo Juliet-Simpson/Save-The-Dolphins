@@ -809,7 +809,7 @@ h3 {
     gap: 2rem;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0.5rem 0 1rem;
+    padding: 0;
     overscroll-behavior-x: contain;
     scroll-behavior: auto;
     scroll-snap-type: x mandatory;
@@ -838,7 +838,7 @@ h3 {
     width: var(--gallery-image-width, auto);
     height: var(--gallery-image-height, auto);
     max-width: calc(100% - 8rem);
-    max-height: calc(100% - 2rem);
+    max-height: 100%;
     object-fit: contain;
     box-shadow: 0 0.5rem 1.5rem rgba(11, 61, 80, 0.16);
 }

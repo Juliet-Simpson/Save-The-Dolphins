@@ -16,7 +16,6 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     let pointerInside = false;
     let focusInside = false;
     let autoplayTimer;
-    let layoutTimer;
     let closeFromBackdrop = false;
 
     const updateSlideLayout = () => {
@@ -27,28 +26,28 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
             isSmallScreen ? 480 : 640,
             maxWidth * (isSmallScreen ? 0.68 : 0.75),
         );
-        let activeImageHeight = 0;
+        let tallestImageHeight = 0;
 
-        gallerySlides.forEach((slide, index) => {
+        gallerySlides.forEach((slide) => {
             const image = slide.querySelector("img");
-            if (!image.naturalWidth || !image.naturalHeight) {
+            const imageWidth = image.naturalWidth || Number(image.getAttribute("width"));
+            const imageHeight = image.naturalHeight || Number(image.getAttribute("height"));
+            if (!imageWidth || !imageHeight) {
                 return;
             }
             const scale = Math.min(
-                maxWidth / image.naturalWidth,
-                maxHeight / image.naturalHeight,
+                maxWidth / imageWidth,
+                maxHeight / imageHeight,
             );
-            const width = image.naturalWidth * scale;
-            const height = image.naturalHeight * scale;
+            const width = imageWidth * scale;
+            const height = imageHeight * scale;
             image.style.setProperty("--gallery-image-width", `${width}px`);
             image.style.setProperty("--gallery-image-height", `${height}px`);
-            if (index === activeIndex) {
-                activeImageHeight = height;
-            }
+            tallestImageHeight = Math.max(tallestImageHeight, height);
         });
 
-        if (activeImageHeight) {
-            galleryTrack.style.setProperty("--gallery-slide-height", `${activeImageHeight + 32}px`);
+        if (tallestImageHeight) {
+            galleryTrack.style.setProperty("--gallery-slide-height", `${tallestImageHeight + 16}px`);
         }
     };
 
@@ -100,11 +99,7 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
         syncAutoplay();
     };
 
-    galleryTrack.addEventListener("scroll", () => {
-        updateActiveIndex();
-        window.clearTimeout(layoutTimer);
-        layoutTimer = window.setTimeout(updateSlideLayout, 120);
-    }, { passive: true });
+    galleryTrack.addEventListener("scroll", updateActiveIndex, { passive: true });
     previousButton.addEventListener("click", () => goToSlide(activeIndex - 1));
     nextButton.addEventListener("click", () => goToSlide(activeIndex + 1));
     autoplayButton.addEventListener("click", () => setPaused(!paused));
