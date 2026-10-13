@@ -131,9 +131,15 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     });
 
     gallerySlides.forEach((slide) => {
-        slide.querySelector("img").addEventListener("load", updateSlideLayout);
-        slide.addEventListener("click", () => {
-            const image = slide.querySelector("img");
+        const image = slide.querySelector("img");
+        image.addEventListener("load", updateSlideLayout);
+        slide.addEventListener("click", (event) => {
+            const clickedImage = event.target === image;
+            const clickedMat = slide.classList.contains("gallery-slide-matted") &&
+                event.target.closest(".gallery-image-mat");
+            if (event.detail !== 0 && !clickedImage && !clickedMat) {
+                return;
+            }
             lightboxImage.src = image.src;
             lightboxImage.alt = image.alt;
             galleryLightbox.showModal();
