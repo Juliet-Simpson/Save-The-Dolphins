@@ -865,10 +865,12 @@ h3 {
 }
 
 .gallery-image-mat {
-    display: block;
+    display: grid;
+    place-items: center;
+    width: 100%;
     max-width: 100%;
     padding-block: clamp(1rem, 3vw, 2.5rem);
-    background: var(--mist);
+    background: var(--foam);
 }
 
 .gallery-slide:focus:not(:focus-visible) {
