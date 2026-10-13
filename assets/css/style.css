@@ -539,6 +539,20 @@ h3 {
     font-size: clamp(1.8rem, 3.4vw, 2.8rem);
 }
 
+@media (min-width: 901px) and (max-height: 900px) {
+    .home-gallery {
+        padding-block: clamp(1.25rem, 3vh, 2.25rem);
+    }
+
+    .home-gallery-heading {
+        margin-bottom: 1rem;
+    }
+
+    .gallery-carousel {
+        max-width: 68rem;
+    }
+}
+
 .section-heading-inline {
     display: flex;
     align-items: end;

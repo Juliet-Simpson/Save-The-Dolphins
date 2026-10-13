@@ -20,10 +20,13 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
 
     const updateSlideLayout = () => {
         const isSmallScreen = window.matchMedia("(max-width: 900px)").matches;
+        const isCompactDesktop = window.matchMedia(
+            "(min-width: 901px) and (max-height: 900px)",
+        ).matches;
         const maxWidth = Math.max(1, galleryTrack.clientWidth - (isSmallScreen ? 96 : 128));
         const maxHeight = Math.min(
-            window.innerHeight * (isSmallScreen ? 0.58 : 0.7),
-            isSmallScreen ? 480 : 640,
+            window.innerHeight * (isSmallScreen ? 0.58 : isCompactDesktop ? 0.5 : 0.7),
+            isSmallScreen ? 480 : isCompactDesktop ? 480 : 640,
             maxWidth * (isSmallScreen ? 0.68 : 0.75),
         );
         let tallestImageHeight = 0;
