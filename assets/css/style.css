@@ -825,8 +825,7 @@ h3 {
     display: grid;
     flex: 0 0 var(--gallery-slide-width);
     place-items: center;
-    height: min(70svh, 40rem);
-    min-height: 22rem;
+    height: var(--gallery-slide-height, min(70svh, 40rem));
     padding: 0;
     border: 0;
     background: transparent;
@@ -836,8 +835,8 @@ h3 {
 
 .gallery-slide img {
     display: block;
-    width: auto;
-    height: auto;
+    width: var(--gallery-image-width, auto);
+    height: var(--gallery-image-height, auto);
     max-width: calc(100% - 8rem);
     max-height: calc(100% - 2rem);
     object-fit: contain;
@@ -1296,8 +1295,7 @@ h3 {
     }
 
     .gallery-slide {
-        height: min(68svh, calc((100vw - 2 * var(--page-gutter)) * 0.75));
-        min-height: 0;
+        height: var(--gallery-slide-height, min(58svh, calc((100vw - 2 * var(--page-gutter)) * 0.68)));
     }
 
     .gallery-slide img {

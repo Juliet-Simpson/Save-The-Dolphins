@@ -16,6 +16,41 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     let pointerInside = false;
     let focusInside = false;
     let autoplayTimer;
+    let layoutTimer;
+    let closeFromBackdrop = false;
+
+    const updateSlideLayout = () => {
+        const isSmallScreen = window.matchMedia("(max-width: 900px)").matches;
+        const maxWidth = Math.max(1, galleryTrack.clientWidth - (isSmallScreen ? 96 : 128));
+        const maxHeight = Math.min(
+            window.innerHeight * (isSmallScreen ? 0.58 : 0.7),
+            isSmallScreen ? 480 : 640,
+            maxWidth * (isSmallScreen ? 0.68 : 0.75),
+        );
+        let activeImageHeight = 0;
+
+        gallerySlides.forEach((slide, index) => {
+            const image = slide.querySelector("img");
+            if (!image.naturalWidth || !image.naturalHeight) {
+                return;
+            }
+            const scale = Math.min(
+                maxWidth / image.naturalWidth,
+                maxHeight / image.naturalHeight,
+            );
+            const width = image.naturalWidth * scale;
+            const height = image.naturalHeight * scale;
+            image.style.setProperty("--gallery-image-width", `${width}px`);
+            image.style.setProperty("--gallery-image-height", `${height}px`);
+            if (index === activeIndex) {
+                activeImageHeight = height;
+            }
+        });
+
+        if (activeImageHeight) {
+            galleryTrack.style.setProperty("--gallery-slide-height", `${activeImageHeight + 32}px`);
+        }
+    };
 
     const updateActiveIndex = () => {
         const center = galleryTrack.getBoundingClientRect().left + galleryTrack.clientWidth / 2;
@@ -33,6 +68,7 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     const goToSlide = (index) => {
         const wrapped = index < 0 || index >= gallerySlides.length;
         activeIndex = (index + gallerySlides.length) % gallerySlides.length;
+        updateSlideLayout();
         const slide = gallerySlides[activeIndex];
         const left = slide.offsetLeft - (galleryTrack.clientWidth - slide.offsetWidth) / 2;
         galleryTrack.scrollTo({
@@ -64,7 +100,11 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
         syncAutoplay();
     };
 
-    galleryTrack.addEventListener("scroll", updateActiveIndex, { passive: true });
+    galleryTrack.addEventListener("scroll", () => {
+        updateActiveIndex();
+        window.clearTimeout(layoutTimer);
+        layoutTimer = window.setTimeout(updateSlideLayout, 120);
+    }, { passive: true });
     previousButton.addEventListener("click", () => goToSlide(activeIndex - 1));
     nextButton.addEventListener("click", () => goToSlide(activeIndex + 1));
     autoplayButton.addEventListener("click", () => setPaused(!paused));
@@ -89,6 +129,7 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     });
 
     gallerySlides.forEach((slide) => {
+        slide.querySelector("img").addEventListener("load", updateSlideLayout);
         slide.addEventListener("click", () => {
             const image = slide.querySelector("img");
             lightboxImage.src = image.src;
@@ -100,19 +141,29 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
 
     galleryLightbox.addEventListener("click", (event) => {
         if (event.target === galleryLightbox) {
+            closeFromBackdrop = true;
             galleryLightbox.close();
-            if (document.activeElement instanceof HTMLElement) {
-                document.activeElement.blur();
-            }
         }
     });
-    galleryLightbox.addEventListener("close", syncAutoplay);
+    galleryLightbox.addEventListener("close", () => {
+        if (closeFromBackdrop) {
+            window.requestAnimationFrame(() => {
+                if (document.activeElement instanceof HTMLElement && gallery.contains(document.activeElement)) {
+                    document.activeElement.blur();
+                }
+            });
+            closeFromBackdrop = false;
+        }
+        syncAutoplay();
+    });
     document.addEventListener("visibilitychange", syncAutoplay);
+    window.addEventListener("resize", updateSlideLayout);
     reducedMotion.addEventListener("change", (event) => {
         if (event.matches) {
             setPaused(true);
         }
     });
 
+    updateSlideLayout();
     setPaused(paused);
 }
