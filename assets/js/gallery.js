@@ -38,15 +38,19 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
             if (!imageWidth || !imageHeight) {
                 return;
             }
+            const imageMaxWidth = maxWidth * (slide.classList.contains("gallery-slide-matted") ? 0.82 : 1);
             const scale = Math.min(
-                maxWidth / imageWidth,
+                imageMaxWidth / imageWidth,
                 maxHeight / imageHeight,
             );
             const width = imageWidth * scale;
             const height = imageHeight * scale;
             image.style.setProperty("--gallery-image-width", `${width}px`);
             image.style.setProperty("--gallery-image-height", `${height}px`);
-            tallestImageHeight = Math.max(tallestImageHeight, height);
+            const matPadding = slide.classList.contains("gallery-slide-matted")
+                ? Math.min(40, Math.max(16, window.innerWidth * 0.03)) * 2
+                : 0;
+            tallestImageHeight = Math.max(tallestImageHeight, height + matPadding);
         });
 
         if (tallestImageHeight) {
