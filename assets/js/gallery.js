@@ -101,6 +101,9 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
     galleryLightbox.addEventListener("click", (event) => {
         if (event.target === galleryLightbox) {
             galleryLightbox.close();
+            if (document.activeElement instanceof HTMLElement) {
+                document.activeElement.blur();
+            }
         }
     });
     galleryLightbox.addEventListener("close", syncAutoplay);
