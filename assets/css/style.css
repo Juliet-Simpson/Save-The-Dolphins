@@ -9,6 +9,9 @@
     --mist: #e7f0ed;
     --bank: #d8c9a8;
     --stone: #766d5b;
+    --body-copy: #4e6267;
+    --body-copy-mobile: #33474b;
+    --body-copy-increase: 0rem;
     --white: #fff;
     --content-width: 72rem;
     --reading-width: 48rem;
@@ -332,8 +335,8 @@ h3 {
 
 .narrow-copy > p:not(.eyebrow),
 .section-heading > p:not(.eyebrow) {
-    color: #4e6267;
-    font-size: 1.08rem;
+    color: var(--body-copy);
+    font-size: calc(1.08rem + var(--body-copy-increase));
 }
 
 .text-link {
@@ -414,7 +417,8 @@ h3 {
 }
 
 .feature-card p {
-    color: #4e6267;
+    color: var(--body-copy);
+    font-size: calc(1rem + var(--body-copy-increase));
 }
 
 .feature-card .text-link {
@@ -455,8 +459,8 @@ h3 {
 .home-intro-copy {
     grid-area: copy;
     margin: 0;
-    color: #4e6267;
-    font-size: 0.95rem;
+    color: var(--body-copy);
+    font-size: calc(0.95rem + var(--body-copy-increase));
 }
 
 .home-fact {
@@ -489,7 +493,8 @@ h3 {
 }
 
 .home-contact .contact-intro > p:last-child {
-    color: #4e6267;
+    color: var(--body-copy);
+    font-size: calc(1rem + var(--body-copy-increase));
 }
 
 .home-contact .contact-form {
@@ -541,8 +546,8 @@ h3 {
 
 .gallery-expand-hint {
     margin: 0 0 0.5rem;
-    color: #4e6267;
-    font-size: 0.9rem;
+    color: var(--body-copy);
+    font-size: calc(0.9rem + var(--body-copy-increase));
     text-align: center;
 }
 
@@ -608,8 +613,8 @@ h3 {
 .page-hero > p:last-child {
     max-width: 46rem;
     margin-left: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2));
-    color: #4e6267;
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: var(--body-copy);
+    font-size: calc(clamp(1.05rem, 2vw, 1.25rem) + var(--body-copy-increase));
 }
 
 .content-section {
@@ -649,7 +654,7 @@ h3 {
 
 .content-copy {
     color: #425a61;
-    font-size: 1rem;
+    font-size: calc(1rem + var(--body-copy-increase));
 }
 
 .content-copy p {
@@ -747,7 +752,8 @@ h3 {
 }
 
 .contact-intro > p:last-child {
-    color: #4e6267;
+    color: var(--body-copy);
+    font-size: calc(1rem + var(--body-copy-increase));
 }
 
 .contact-form {
@@ -808,7 +814,7 @@ h3 {
     margin: 0 auto;
     padding: 2rem var(--page-gutter);
     color: var(--stone);
-    font-size: 0.83rem;
+    font-size: calc(0.83rem + var(--body-copy-increase));
 }
 
 .gallery-section {
@@ -1064,7 +1070,8 @@ h3 {
 
 .thank-you p:not(.eyebrow) {
     margin-bottom: 2rem;
-    color: #4e6267;
+    color: var(--body-copy);
+    font-size: calc(1rem + var(--body-copy-increase));
 }
 
 .redirect-message {
@@ -1075,6 +1082,19 @@ h3 {
 }
 
 @media (max-width: 900px) {
+    :root {
+        --body-copy: var(--body-copy-mobile);
+        --body-copy-increase: 0.05rem;
+    }
+
+    .content-copy {
+        color: var(--body-copy-mobile);
+    }
+
+    .source-note {
+        color: var(--body-copy-mobile);
+    }
+
     .site-header {
         position: sticky;
         flex-direction: row;
@@ -1276,6 +1296,10 @@ h3 {
 }
 
 @media (max-width: 500px) {
+    :root {
+        --body-copy-increase: 0.1rem;
+    }
+
     .home-hero {
         min-height: 34.92rem;
         padding: 2rem var(--page-gutter) 6rem;
