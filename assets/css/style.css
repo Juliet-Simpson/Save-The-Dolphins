@@ -177,7 +177,7 @@ h3 {
     display: flex;
     align-items: center;
     min-height: min(46rem, calc(88svh - 5.3rem));
-    padding: clamp(2rem, 5vw, 4rem) var(--page-gutter) clamp(7rem, 14vh, 9rem);
+    padding: clamp(2rem, 5vw, 4rem) var(--page-gutter);
     overflow: hidden;
     color: var(--white);
     background-color: var(--river-deep);
@@ -238,17 +238,12 @@ h3 {
 }
 
 .hero-actions {
-    position: absolute;
-    z-index: 1;
-    bottom: clamp(1rem, 3vh, 1.75rem);
-    left: 50%;
     display: flex;
     width: max-content;
     max-width: calc(100% - 2 * var(--page-gutter));
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
-    transform: translateX(-50%);
 }
 
 .button {
@@ -276,6 +271,10 @@ h3 {
     font-size: 0.86rem;
 }
 
+.hero-actions .button-light {
+    border: 2px solid var(--turquoise);
+}
+
 .button-light {
     color: var(--river-deep);
     background: var(--foam);
@@ -287,13 +286,13 @@ h3 {
 }
 
 .button-outline {
-    border-color: rgba(255, 255, 255, 0.75);
-    color: var(--white);
+    border-color: var(--river-deep);
+    color: var(--river-deep);
     background: transparent;
 }
 
 .hero-actions .button-outline {
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-width: 2px;
 }
 
 .button-outline:hover {
@@ -433,11 +432,21 @@ h3 {
 .home-intro {
     display: grid;
     grid-template-columns: minmax(14rem, 0.9fr) minmax(20rem, 1.5fr) minmax(12rem, 0.8fr);
-    grid-template-areas: "heading copy fact";
+    grid-template-areas:
+        "heading copy fact"
+        "actions actions actions";
     align-items: center;
-    gap: clamp(1rem, 3vw, 3rem);
+    column-gap: clamp(1rem, 3vw, 3rem);
+    row-gap: 0.5rem;
     padding: 2rem max(var(--page-gutter), calc((100vw - var(--content-width)) / 2));
+    padding-bottom: 0.75rem;
     background: var(--mist);
+}
+
+.home-intro .hero-actions {
+    grid-area: actions;
+    justify-self: center;
+    margin-block: 0.25rem;
 }
 
 .home-intro-heading {
@@ -521,9 +530,13 @@ h3 {
 }
 
 .home-gallery {
-    padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter) clamp(2rem, 4vw, 3rem);
+    padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter) 3.25rem;
     background: var(--foam);
     scroll-margin-top: 6rem;
+}
+
+.home-gallery .gallery-carousel {
+    position: relative;
 }
 
 .home-gallery-heading {
@@ -553,7 +566,7 @@ h3 {
 
 @media (min-width: 901px) and (max-height: 900px) {
     .home-gallery {
-        padding-block: clamp(1.25rem, 3vh, 2.25rem) calc(clamp(1.25rem, 3vh, 2.25rem) + 1.2rem);
+        padding-block: clamp(1.25rem, 3vh, 2.25rem) 3.25rem;
     }
 
     .home-gallery-heading {
@@ -937,11 +950,11 @@ h3 {
 }
 
 .gallery-autoplay {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin: 0.75rem auto 0;
-    transform: none;
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
 }
 
 .gallery-play-icon {
@@ -1193,7 +1206,7 @@ h3 {
     .home-hero {
         align-items: flex-start;
         min-height: 38rem;
-        padding: 2.5rem var(--page-gutter) 7rem;
+        padding: 2.5rem var(--page-gutter);
         background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.02) 0%, rgba(8, 44, 58, 0.05) 48%, rgba(8, 44, 58, 0.34) 100%), url("../images/home-image.png");
         background-position: left center, left 66.6667%;
     }
@@ -1250,7 +1263,8 @@ h3 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas:
             "heading fact"
-            "copy copy";
+            "copy copy"
+            "actions actions";
     }
 
     .home-fact {
@@ -1302,7 +1316,7 @@ h3 {
 
     .home-hero {
         min-height: 34.92rem;
-        padding: 2rem var(--page-gutter) 6rem;
+        padding: 2rem var(--page-gutter);
     }
 
     .hero-title {
@@ -1336,8 +1350,9 @@ h3 {
         grid-template-areas:
             "heading"
             "fact"
-            "copy";
-        padding-block: 1.5rem;
+            "copy"
+            "actions";
+        padding-block: 1.5rem 0.75rem;
     }
 
     .home-fact {
