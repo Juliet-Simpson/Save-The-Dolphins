@@ -227,6 +227,12 @@ h3 {
     .home-hero .eyebrow {
         font-size: 115%;
     }
+
+    .hero-copy {
+        position: relative;
+        top: min(calc(2.64svh - 0.159rem), 1.38rem);
+        font-size: calc(clamp(1rem, 1.55vw, 1.2rem) + 1pt);
+    }
 }
 
 .hero-copy {
@@ -1213,7 +1219,7 @@ h3 {
 
     .home-hero {
         align-items: flex-start;
-        min-height: 38rem;
+        min-height: 32.3rem;
         padding: 2.5rem var(--page-gutter);
         background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.02) 0%, rgba(8, 44, 58, 0.05) 48%, rgba(8, 44, 58, 0.34) 100%), url("../images/home-image.png");
         background-position: left center, left 66.6667%;
@@ -1323,7 +1329,7 @@ h3 {
     }
 
     .home-hero {
-        min-height: 34.92rem;
+        min-height: 29.682rem;
         padding: 2rem var(--page-gutter);
     }
 
