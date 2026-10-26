@@ -220,7 +220,10 @@ h3 {
 
 .home-hero .eyebrow {
     color: var(--turquoise);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
+    text-shadow:
+        0 1px 2px rgba(11, 61, 80, 0.78),
+        0 2px 6px rgba(11, 61, 80, 0.58),
+        0 4px 14px rgba(11, 61, 80, 0.38);
 }
 
 @media (min-width: 901px) {
@@ -231,7 +234,6 @@ h3 {
     .hero-copy {
         position: relative;
         top: min(calc(2.64svh - 0.159rem), 1.38rem);
-        font-size: calc(clamp(1rem, 1.55vw, 1.2rem) + 1pt);
     }
 }
 
@@ -503,7 +505,7 @@ h3 {
     gap: clamp(2rem, 7vw, 7rem);
     padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter);
     background: var(--mist);
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 0;
 }
 
 .home-contact .contact-intro {
@@ -546,7 +548,7 @@ h3 {
 .home-gallery {
     padding: clamp(2.5rem, 5vw, 4rem) var(--page-gutter) 3.25rem;
     background: var(--foam);
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 0;
 }
 
 .home-gallery .gallery-carousel {
@@ -1222,7 +1224,7 @@ h3 {
         min-height: 32.3rem;
         padding: 2.5rem var(--page-gutter);
         background-image: linear-gradient(90deg, rgba(8, 44, 58, 0.02) 0%, rgba(8, 44, 58, 0.05) 48%, rgba(8, 44, 58, 0.34) 100%), url("../images/home-image.png");
-        background-position: left center, left 66.6667%;
+        background-position: left 55%;
     }
 
     .hero-content {
@@ -1315,7 +1317,7 @@ h3 {
     }
 
     html {
-        scroll-padding-top: 9rem;
+        scroll-padding-top: 5.3rem;
     }
 
     .contact-section {
@@ -1426,12 +1428,20 @@ h3 {
     }
 
     html {
-        scroll-padding-top: 10rem;
+        scroll-padding-top: 5.3rem;
     }
+}
 
-    .home-contact,
-    .home-gallery {
-        scroll-margin-top: 9rem;
+@media (min-width: 501px) and (max-width: 900px) {
+    .hero-copy {
+        top: 57%;
+        font-size: calc(clamp(1rem, 1.55vw, 1.2rem) + 3pt);
+    }
+}
+
+@media (min-width: 901px) {
+    .hero-copy {
+        font-size: calc(clamp(1rem, 1.55vw, 1.2rem) + 3.5pt);
     }
 }
 
