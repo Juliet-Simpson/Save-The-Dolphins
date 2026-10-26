@@ -625,6 +625,10 @@ h3 {
     background: var(--mist);
 }
 
+.about-page-hero {
+    padding-bottom: calc(clamp(2rem, 4vw, 3.75rem) * 0.65);
+}
+
 .page-hero > * {
     max-width: var(--content-width);
     margin-inline: auto;
@@ -638,6 +642,10 @@ h3 {
 .page-hero h1 {
     margin-bottom: 1.3rem;
     font-size: clamp(2.75rem, 7vw, 5rem);
+}
+
+.about-page-hero h1 {
+    font-size: clamp(2.0625rem, 5.25vw, 3.75rem);
 }
 
 .page-hero > p:last-child {
