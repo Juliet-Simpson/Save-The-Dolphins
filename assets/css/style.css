@@ -626,7 +626,7 @@ h3 {
 }
 
 .about-page-hero {
-    padding-bottom: calc(clamp(2rem, 4vw, 3.75rem) * 0.65);
+    padding-bottom: clamp(1.175rem, 2.3vw, 1.84375rem);
 }
 
 .page-hero > * {
@@ -653,6 +653,10 @@ h3 {
     margin-left: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2));
     color: var(--body-copy);
     font-size: calc(clamp(1.05rem, 2vw, 1.25rem) + var(--body-copy-increase));
+}
+
+.about-page-hero > p:last-child {
+    margin-bottom: 0;
 }
 
 .content-section {
