@@ -626,6 +626,7 @@ h3 {
 }
 
 .about-page-hero {
+    padding-top: clamp(1.3rem, 2.6vw, 2.4375rem);
     padding-bottom: clamp(1.175rem, 2.3vw, 1.84375rem);
 }
 
@@ -661,6 +662,10 @@ h3 {
 
 .content-section {
     padding: clamp(2rem, 3.5vw, 3.25rem) var(--page-gutter);
+}
+
+.about-dolphin-section {
+    padding-top: clamp(1.6rem, 2.8vw, 2.6rem);
 }
 
 .content-section-tint {
