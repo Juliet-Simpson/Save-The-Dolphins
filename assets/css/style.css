@@ -668,26 +668,25 @@ h3 {
     padding-top: clamp(1.6rem, 2.8vw, 2.6rem);
 }
 
-.about-dolphin-layout {
-    display: block;
+.about-dolphin-section .species-read-more {
+    margin-top: 1.25rem;
 }
 
-@media (min-width: 901px) {
-    .about-dolphin-layout {
-        max-width: none;
-    }
+.about-dolphin-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 40.625%);
+    align-items: start;
+    gap: clamp(1.5rem, 4vw, 3rem);
 }
 
-.about-dolphin-layout .content-copy {
-    display: flow-root;
+.about-dolphin-intro-copy > p:last-child {
+    margin-bottom: 0;
 }
 
-.about-dolphin-image {
-    position: sticky;
-    float: right;
-    width: 40.625%;
+.content-image.about-dolphin-image {
+    position: static;
+    width: 100%;
     max-width: none;
-    margin: 0 0 1.5rem clamp(1.5rem, 4vw, 3rem);
 }
 
 .species-details > summary {
@@ -710,6 +709,16 @@ h3 {
     margin-top: 1rem;
 }
 
+@media (min-width: 901px) {
+    .about-dolphin-section {
+        padding-bottom: 1.5rem;
+    }
+
+    .species-details-actions {
+        margin-bottom: 1.34rem;
+    }
+}
+
 .content-section-tint {
     background: #edf2eb;
 }
@@ -728,11 +737,26 @@ h3 {
     font-size: 0.9rem;
 }
 
+.species-subheading {
+    margin: 1rem 0 0.5rem;
+    color: var(--river-deep);
+    font-size: 1.05rem;
+    font-weight: 650;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+}
+
 .content-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.65fr);
     align-items: start;
     gap: clamp(2rem, 6vw, 5rem);
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+.content-layout.about-dolphin-layout {
+    display: block;
     max-width: var(--content-width);
     margin-inline: auto;
 }
@@ -764,6 +788,12 @@ h3 {
     margin: 0;
     padding: 0.6rem;
     background: var(--foam);
+}
+
+@media (min-width: 901px) {
+    .content-image.about-dolphin-image {
+        padding: 3.5px 0 0;
+    }
 }
 
 .content-image img {
@@ -1364,9 +1394,22 @@ h3 {
         max-width: 35rem;
     }
 
+    .about-dolphin-intro {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     .about-dolphin-image {
-        position: sticky;
-        max-width: none;
+        max-width: 35rem;
+        margin: 0 0 1.1rem;
+    }
+
+    .about-dolphin-intro-copy {
+        grid-row: 2;
+    }
+
+    .about-dolphin-image {
+        grid-row: 1;
     }
 
     .feature-grid {
@@ -1391,16 +1434,6 @@ h3 {
 
     .contact-section {
         scroll-margin-top: 8rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .about-dolphin-image {
-        position: static;
-        float: none;
-        width: 100%;
-        max-width: 35rem;
-        margin: 0 0 1.1rem;
     }
 }
 
