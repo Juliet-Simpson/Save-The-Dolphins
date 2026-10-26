@@ -621,7 +621,7 @@ h3 {
 }
 
 .page-hero {
-    padding: clamp(4rem, 8vw, 7.5rem) var(--page-gutter);
+    padding: clamp(2rem, 4vw, 3.75rem) var(--page-gutter);
     background: var(--mist);
 }
 
@@ -632,6 +632,7 @@ h3 {
 
 .page-hero .eyebrow {
     margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
 .page-hero h1 {
@@ -647,7 +648,7 @@ h3 {
 }
 
 .content-section {
-    padding: clamp(4rem, 7vw, 6.5rem) var(--page-gutter);
+    padding: clamp(2rem, 3.5vw, 3.25rem) var(--page-gutter);
 }
 
 .content-section-tint {
@@ -662,6 +663,10 @@ h3 {
 .content-heading h2 {
     margin-bottom: 0;
     font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.content-heading .eyebrow {
+    font-size: 0.9rem;
 }
 
 .content-layout {
