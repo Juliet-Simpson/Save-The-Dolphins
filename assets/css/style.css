@@ -668,6 +668,48 @@ h3 {
     padding-top: clamp(1.6rem, 2.8vw, 2.6rem);
 }
 
+.about-dolphin-layout {
+    display: block;
+}
+
+@media (min-width: 901px) {
+    .about-dolphin-layout {
+        max-width: none;
+    }
+}
+
+.about-dolphin-layout .content-copy {
+    display: flow-root;
+}
+
+.about-dolphin-image {
+    position: sticky;
+    float: right;
+    width: 40.625%;
+    max-width: none;
+    margin: 0 0 1.5rem clamp(1.5rem, 4vw, 3rem);
+}
+
+.species-details > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.species-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.species-details[data-expanded="true"] > summary {
+    display: none;
+}
+
+.species-details-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
 .content-section-tint {
     background: #edf2eb;
 }
@@ -1322,6 +1364,11 @@ h3 {
         max-width: 35rem;
     }
 
+    .about-dolphin-image {
+        position: sticky;
+        max-width: none;
+    }
+
     .feature-grid {
         grid-template-columns: 1fr;
     }
@@ -1344,6 +1391,16 @@ h3 {
 
     .contact-section {
         scroll-margin-top: 8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-dolphin-image {
+        position: static;
+        float: none;
+        width: 100%;
+        max-width: 35rem;
+        margin: 0 0 1.1rem;
     }
 }
 
