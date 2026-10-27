@@ -669,6 +669,9 @@ h3 {
 }
 
 .about-dolphin-section .species-read-more {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
     margin-top: 1.25rem;
 }
 
@@ -714,8 +717,16 @@ h3 {
         padding-bottom: 1.5rem;
     }
 
+    .about-dolphin-section .species-details {
+        display: block;
+    }
+
+    .about-dolphin-section .species-read-more {
+        margin-right: calc(40.625% + clamp(1.5rem, 4vw, 3rem));
+    }
+
     .species-details-actions {
-        margin-bottom: 1.34rem;
+        margin-bottom: 0.9rem;
     }
 }
 
@@ -791,14 +802,24 @@ h3 {
 }
 
 @media (min-width: 901px) {
+    .about-dolphin-intro {
+        column-gap: clamp(0.75rem, 2vw, 1.5rem);
+    }
+
     .content-image.about-dolphin-image {
-        padding: 3.5px 0 0;
+        padding: 0;
     }
 }
 
 .content-image img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 901px) {
+    .content-image.about-dolphin-image img {
+        padding-top: 4px;
+    }
 }
 
 .content-image-map img {
@@ -1210,6 +1231,14 @@ h3 {
         --body-copy-increase: 0.05rem;
     }
 
+    .about-dolphin-section {
+        padding-bottom: 1.34rem;
+    }
+
+    .about-dolphin-section .species-read-more {
+        margin-top: 0.4rem;
+    }
+
     .content-copy {
         color: var(--body-copy-mobile);
     }
@@ -1548,6 +1577,10 @@ h3 {
     .hero-copy {
         top: 57%;
         font-size: calc(clamp(1rem, 1.55vw, 1.2rem) + 3pt);
+    }
+
+    .content-image.about-dolphin-image {
+        padding-inline: 4.2rem;
     }
 }
 
