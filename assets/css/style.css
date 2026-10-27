@@ -455,6 +455,10 @@ h3 {
     background: var(--mist);
 }
 
+.home-intro > * {
+    min-width: 0;
+}
+
 .home-intro .hero-actions {
     grid-area: actions;
     justify-self: center;
@@ -1503,7 +1507,7 @@ h3 {
     }
 
     .home-intro {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         grid-template-areas:
             "heading"
             "fact"
