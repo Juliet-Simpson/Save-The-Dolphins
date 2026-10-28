@@ -638,6 +638,39 @@ h3 {
     background-size: cover;
 }
 
+.mission-page-hero {
+    padding-bottom: calc(clamp(2rem, 4vw, 3.75rem) - 0.3rem);
+    background-image: url("../images/mission-river-confluence.jpg");
+    background-position: center 98%;
+    background-size: cover;
+}
+
+.mission-page-hero h1 {
+    color: var(--ink);
+    text-shadow: 0 2px 12px rgba(255, 255, 255, 0.8);
+}
+
+.mission-page-hero .eyebrow {
+    color: var(--white);
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 1),
+        0 3px 10px rgba(0, 0, 0, 0.92),
+        0 8px 22px rgba(0, 0, 0, 0.76),
+        0 16px 38px rgba(0, 0, 0, 0.56),
+        0 28px 62px rgba(0, 0, 0, 0.34);
+}
+
+.page-hero.mission-page-hero > p:last-child {
+    color: var(--foam);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 501px) {
+    .mission-page-hero {
+        background-position: center 93%;
+    }
+}
+
 @media (max-width: 900px) {
     .about-page-hero {
         background-position: center 76%;
