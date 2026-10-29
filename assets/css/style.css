@@ -675,6 +675,10 @@ h3 {
     .about-page-hero {
         background-position: center 76%;
     }
+
+    .mission-page-hero > p:last-child {
+        font-weight: 700;
+    }
 }
 
 .page-hero > * {
