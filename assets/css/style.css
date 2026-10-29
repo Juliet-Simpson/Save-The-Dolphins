@@ -681,14 +681,14 @@ h3 {
     }
 
     .page-hero.mission-page-hero > p:last-child {
-        color: var(--ink);
+        color: var(--white);
         font-weight: 400;
         text-shadow:
-            0 0 2px rgba(255, 255, 255, 1),
-            0 0 5px rgba(255, 255, 255, 1),
-            0 0 10px rgba(255, 255, 255, 0.95),
-            0 0 18px rgba(255, 255, 255, 0.8),
-            0 0 28px rgba(255, 255, 255, 0.65);
+            0 0 2px rgba(0, 0, 0, 1),
+            0 0 5px rgba(0, 0, 0, 1),
+            0 0 10px rgba(0, 0, 0, 0.95),
+            0 0 18px rgba(0, 0, 0, 0.8),
+            0 0 28px rgba(0, 0, 0, 0.65);
     }
 }
 
