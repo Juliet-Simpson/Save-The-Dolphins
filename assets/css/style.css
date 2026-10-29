@@ -676,8 +676,9 @@ h3 {
         background-position: center 76%;
     }
 
-    .mission-page-hero > p:last-child {
-        font-weight: 700;
+    .page-hero.mission-page-hero > p:last-child {
+        color: var(--white);
+        font-weight: 400;
     }
 }
 
