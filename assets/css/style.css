@@ -1836,3 +1836,120 @@ h3 {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Mission story: desktop text and image layout */
+@media (min-width: 901px) {
+    .mission-story .content-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 32%);
+        column-gap: clamp(1.1rem, 2.5vw, 1.9rem);
+        align-items: start;
+    }
+
+    .mission-story .content-image.mission-image {
+        position: static;
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        background: transparent;
+    }
+}
+
+/* Mission image: tablet and mobile alignment */
+@media (max-width: 900px) {
+    .mission-story .content-image.mission-image {
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .mission-story .content-image.mission-image {
+        padding: 0 8px;
+    }
+}
+
+/* Mission story: reduced tablet/mobile row gap */
+@media (max-width: 900px) {
+    .mission-story .content-layout {
+        row-gap: clamp(1rem, 3vw, 2.5rem);
+    }
+}
+
+/* Children's book introduction: cover on the left, text on the right */
+.book-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+    align-items: start;
+    column-gap: clamp(1.1rem, 2.5vw, 1.9rem);
+    row-gap: 0;
+    max-width: var(--content-width);
+    margin: 1.1rem auto 2.5rem;
+}
+
+.book-cover-slot,
+.book-intro-copy {
+    min-width: 0;
+}
+
+.book-intro-copy p {
+    margin-bottom: 1.1rem;
+}
+
+.book-intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .book-intro-layout {
+        grid-template-columns: minmax(0, 1fr);
+        column-gap: 0;
+        margin-block: 1.5rem;
+    }
+}
+
+/* Children's book cover and responsive introduction text */
+.book-purpose {
+    max-width: var(--content-width);
+    margin-inline: auto;
+    font-size: calc(1rem + var(--body-copy-increase));
+}
+
+.book-cover-slot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.book-cover-image {
+    display: block;
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mission book cover: desktop width and inset */
+@media (min-width: 901px) {
+    .book-cover-image {
+        padding-inline: 5px;
+    }
+}
+
+/* Book cover: tablet and mobile spacing */
+@media (max-width: 900px) {
+    .book-cover-slot {
+        padding: 0 5px 1.5rem;
+    }
+}
+
+/* Book excerpt: closing quotation mark */
+.story-card .story-mark-closing {
+    display: block;
+    margin-top: 0.35rem;
+    margin-bottom: -1rem;
+    text-align: right;
+}
