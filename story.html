@@ -32,7 +32,10 @@
             <p class="eyebrow">A personal conservation project</p>
             <h1>The Mission</h1>
             <p>A story-led effort to help more people understand the Ganges dolphin and the river it depends on.</p>
-        </section>
+                <button class="mission-hero-expand" type="button" aria-haspopup="dialog" aria-controls="mission-hero-lightbox">
+            Click to expand
+        </button>
+</section>
 
         <section class="content-section mission-story">
             <div class="content-heading">
@@ -107,7 +110,13 @@
     </figure>
 
     <p class="source-note">Factual information for this site taken from Wikipedia and the WWF website, with thanks.</p>
-    </main>
+        <dialog class="mission-hero-lightbox" id="mission-hero-lightbox" aria-label="Expanded photograph of the Ganges river confluence">
+        <button class="mission-lightbox-close" type="button" aria-label="Close expanded photograph">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="assets/images/mission-river-confluence.jpg" alt="The Ganges river confluence">
+    </dialog>
+</main>
 
     <footer class="site-footer">
         <div class="footer-main">
@@ -126,5 +135,6 @@
         </div>
     </footer>
     <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/mission-lightbox.js" defer></script>
 </body>
 </html>
