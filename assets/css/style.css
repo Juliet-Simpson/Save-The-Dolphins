@@ -1953,3 +1953,245 @@ h3 {
     margin-bottom: -1rem;
     text-align: right;
 }
+
+/* Mission portrait: reduced to 75% width on tablet and mobile */
+@media (max-width: 900px) {
+    .mission-story .content-image.mission-image {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+}
+
+/* Fundraising: map size and column spacing */
+#fundraising .content-image-map {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (min-width: 901px) {
+    #fundraising .content-layout {
+        column-gap: clamp(1.1rem, 2.5vw, 1.9rem);
+    }
+}
+
+/* Fundraising: narrower map column on desktop */
+@media (min-width: 901px) {
+    #fundraising .content-layout {
+        grid-template-columns: minmax(0, 1.565fr) minmax(0, 0.435fr);
+    }
+}
+
+/* Fundraising map: tablet and mobile sizing */
+@media (max-width: 900px) {
+    #fundraising .content-image-map {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* Fundraising map: separate tablet and mobile sizing */
+@media (min-width: 501px) and (max-width: 900px) {
+    #fundraising .content-image-map {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    #fundraising .content-image-map {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* Fundraising map placement: inline on tablet and mobile */
+@media (min-width: 901px) {
+    #fundraising .fundraising-map-inline {
+        display: none !important;
+    }
+}
+
+@media (max-width: 900px) {
+    #fundraising .fundraising-map-desktop {
+        display: none !important;
+    }
+
+    #fundraising .fundraising-map-inline {
+        display: block;
+        position: static;
+        max-width: none;
+        margin: 0 auto 1.1rem;
+        background: transparent;
+    }
+}
+
+/* Fundraising layout: desktop arrangement retained on tablet */
+@media (min-width: 501px) and (max-width: 900px) {
+    #fundraising .content-layout {
+        grid-template-columns: minmax(0, 1.565fr) minmax(0, 0.435fr);
+        align-items: start;
+        gap: clamp(1.1rem, 2.5vw, 1.9rem);
+    }
+
+    #fundraising .fundraising-map-desktop {
+        display: block !important;
+    }
+
+    #fundraising .fundraising-map-inline {
+        display: none !important;
+    }
+
+    #fundraising .content-image-map {
+        padding-left: 10%;
+        padding-right: 10%;
+        position: sticky;
+        top: 7rem;
+        max-width: none;
+    }
+}
+
+/* Mobile retains the inline map layout */
+@media (max-width: 500px) {
+    #fundraising .fundraising-map-desktop {
+        display: none !important;
+    }
+
+    #fundraising .fundraising-map-inline {
+        display: block !important;
+        position: static;
+        max-width: none;
+        margin: 0 auto 1.1rem;
+        background: transparent;
+    }
+}
+
+/* Fundraising tablet: map column increased by 50 percent */
+@media (min-width: 501px) and (max-width: 900px) {
+    #fundraising .content-layout {
+        grid-template-columns: minmax(0, 2.065fr) minmax(0, 1fr);
+    }
+}
+/* Fundraising map: anchored at top of column */
+@media (min-width: 501px) {
+    #fundraising .content-image-map {
+        position: static !important;
+        top: auto;
+        align-self: start;
+    }
+}
+/* Fundraising tablet: narrower image column and asymmetric padding */
+@media (min-width: 501px) and (max-width: 900px) {
+    #fundraising .content-layout {
+        grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr);
+    }
+
+    #fundraising .content-image-map {
+        padding-left: 10%;
+        padding-right: 0;
+    }
+}
+/* Fundraising tablet: social paragraph full-width row */
+#fundraising .fundraising-tablet-full-row {
+    display: none;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    #fundraising .fundraising-social-tablet-original {
+        display: none !important;
+    }
+
+    #fundraising .fundraising-tablet-full-row {
+        display: block !important;
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+    }
+}
+/* Fundraising map: final mobile width and reduced top padding */
+
+/* Reduce the map's top padding across all screen sizes */
+#fundraising .content-image-map {
+    padding-top: 0.3rem;
+}
+
+/* Narrow the map by a further 20% on mobile only */
+@media (max-width: 500px) {
+    #fundraising .content-image-map {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+/* Fundraising text: responsive route wording */
+.fundraising-route-mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .fundraising-route-desktop {
+        display: none;
+    }
+
+    .fundraising-route-mobile {
+        display: inline;
+    }
+}
+/* Fundraising credits: left aligned */
+#fundraising .section-credits {
+    text-align: left;
+}
+/* Source note: left aligned with page content */
+.source-note {
+    text-align: left;
+    margin-left: var(--page-gutter);
+    margin-right: var(--page-gutter);
+}
+/* Source note: corrected page-gutter alignment */
+.source-note {
+    max-width: none;
+    margin: 0;
+    padding: 2rem var(--page-gutter);
+    text-align: left;
+}
+/* Mission closing badge */
+.mission-closing-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 0.5rem;
+    padding: 0;
+    background: transparent;
+}
+
+.mission-closing-badge img {
+    display: block;
+    width: 290px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 900px) {
+    .mission-closing-badge img {
+        width: 240px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .mission-closing-badge img {
+        width: 190px;
+    }
+}
+/* Mission closing badge: refined vertical spacing */
+.mission-closing-badge {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
