@@ -2330,3 +2330,11 @@ h3 {
 .mission-page-hero > h1 + p {
     font-size: calc(clamp(1.05rem, 2vw, 1.25rem) + var(--body-copy-increase));
 }
+
+/* DESKTOP NAVBAR SPACING REFINEMENT */
+@media (min-width: 901px) {
+    .site-header {
+        padding-inline: clamp(1rem, 2vw, 2rem);
+        gap: clamp(0.75rem, 1.5vw, 1.25rem);
+    }
+}
