@@ -4,7 +4,7 @@
     --river-deep: #0b3d50;
     --river: #12677a;
     --water: #236e78;
-    --turquoise: #2cb4be;
+    --turquoise: #39b9c2;
     --foam: #f6f6ef;
     --mist: #e7f0ed;
     --bank: #d8c9a8;
@@ -29,7 +29,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 5.4rem;
 }
 
 body {
@@ -1683,7 +1683,7 @@ h3 {
     }
 
     html {
-        scroll-padding-top: 5.3rem;
+        scroll-padding-top: 4.7rem;
     }
 
     .contact-section {
@@ -1798,7 +1798,7 @@ h3 {
     }
 
     html {
-        scroll-padding-top: 5.3rem;
+        scroll-padding-top: 4.7rem;
     }
 }
 
@@ -2336,5 +2336,15 @@ h3 {
     .site-header {
         padding-inline: clamp(1rem, 2vw, 2rem);
         gap: clamp(0.75rem, 1.5vw, 1.25rem);
+    }
+}
+
+/* HOMEPAGE HERO EYEBROW: TABLET AND MOBILE SHADOW */
+@media (max-width: 900px) {
+    .home-hero .eyebrow {
+        -webkit-text-stroke: 0.7px rgba(11, 45, 55, 0.95);
+        text-shadow:
+            0 1px 3px rgba(11, 45, 55, 0.45),
+            0 2px 6px rgba(11, 45, 55, 0.25);
     }
 }

@@ -95,7 +95,7 @@ if (gallery && galleryTrack && gallerySlides.length && galleryLightbox) {
         ) {
             return;
         }
-        autoplayTimer = window.setInterval(() => goToSlide(activeIndex + 1), 6500);
+        autoplayTimer = window.setInterval(() => goToSlide(activeIndex + 1), 3500);
     };
 
     const setPaused = (shouldPause) => {
