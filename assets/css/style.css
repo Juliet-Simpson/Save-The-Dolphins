@@ -631,8 +631,8 @@ h3 {
 }
 
 .about-page-hero {
-    padding-top: clamp(1.3rem, 2.6vw, 2.4375rem);
-    padding-bottom: clamp(1.175rem, 2.3vw, 1.84375rem);
+    padding-top: clamp(1.6rem, 2.9vw, 2.7375rem);
+    padding-bottom: clamp(1.475rem, 2.6vw, 2.14375rem);
     background-image: url("../images/about-hero-background.jpg");
     background-position: center 88%;
     background-size: cover;
@@ -708,7 +708,8 @@ h3 {
 }
 
 .about-page-hero h1 {
-    font-size: clamp(2.0625rem, 5.25vw, 3.75rem);
+    font-size: clamp(2.75rem, 7vw, 5rem);
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.9);
 }
 
 .page-hero > p:last-child {
@@ -721,6 +722,7 @@ h3 {
 .about-page-hero > p:last-child {
     margin-bottom: 0;
     color: var(--foam);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65), 0 2px 9px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 901px) {
@@ -769,7 +771,7 @@ h3 {
 
 .about-river-intro {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 40.625%);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 30.5%);
     grid-template-areas: "copy image";
     align-items: start;
     gap: clamp(1.5rem, 4vw, 3rem);
@@ -784,7 +786,7 @@ h3 {
     grid-area: image;
     width: 100%;
     max-width: none;
-    padding: 0;
+    padding: 0 5%;
 }
 
 .about-river-intro-copy > p:last-child {
@@ -889,12 +891,6 @@ h3 {
 
     .about-river-section .content-read-more {
         margin-right: calc(40.625% + clamp(1.5rem, 4vw, 3rem));
-    }
-
-    .about-river-section .content-details[data-expanded="true"] .content-details-content::before {
-        display: block;
-        height: 1rem;
-        content: "";
     }
 
     .content-details-actions {
@@ -1645,7 +1641,7 @@ h3 {
     }
 
     .content-image.about-river-image {
-        padding: 0 12.5% 7px;
+        padding: 0 17.5% 7px;
     }
 
     .about-dolphin-intro {
@@ -2293,7 +2289,7 @@ h3 {
     color: var(--white);
     background: transparent;
     font-size: 0.85rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 0 7px rgba(0, 0, 0, 0.9), 0 0 11px rgba(0, 0, 0, 0.55);
 }
 
 .mission-hero-expand:hover,
@@ -2347,4 +2343,135 @@ h3 {
             0 1px 3px rgba(11, 45, 55, 0.45),
             0 2px 6px rgba(11, 45, 55, 0.25);
     }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .about-river-section .content-heading {
+        margin-bottom: 1rem;
+    }
+    .content-image.about-river-image {
+        padding: 0 17.5% 7px;
+    }
+}
+@media (max-width: 600px) {
+    .about-river-section .content-heading {
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .about-habitat-section .content-heading {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-habitat-section .content-heading {
+        margin-bottom: 1rem;
+    }
+}
+/* Dolphin section: reduced heading and image spacing on tablet and mobile */
+@media (max-width: 900px) {
+    .about-dolphin-section .content-heading {
+        margin-bottom: 1rem;
+    }
+
+    .about-dolphin-section .content-image.about-dolphin-image {
+        margin-bottom: 0;
+    }
+}
+/* River photographs */
+.about-river-photos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 2.5vw, 2rem);
+    margin: 1.5rem 0 1.75rem;
+}
+
+.about-river-photo {
+    margin: 0;
+    min-width: 0;
+}
+
+.about-river-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    .about-river-photos {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+/* River photograph expand prompts */
+.about-river-photo {
+    position: relative;
+}
+
+.river-photo-expand {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.25rem;
+    background: rgba(3, 17, 23, 0.85);
+    color: #fff;
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 180ms ease;
+}
+
+.river-photo-expand:hover,
+.river-photo-expand:focus-visible {
+    background: var(--river);
+}
+
+.river-photo-expand:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .river-photo-expand {
+        right: 0.5rem;
+        bottom: 0.5rem;
+        padding: 0.5rem 0.7rem;
+    }
+}
+/* RIVER PHOTO PROMPT REFINEMENT */
+.river-photo-expand {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: var(--white);
+    background: transparent;
+    font-size: 0.85rem;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 0 7px rgba(0, 0, 0, 0.9), 0 0 11px rgba(0, 0, 0, 0.55);
+    transition: none;
+}
+
+.river-photo-expand:hover,
+.river-photo-expand:focus-visible {
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* Subtle source links in credits */
+.source-note .source-link {
+    color: inherit;
+    text-decoration: underline dotted;
+    text-decoration-color: rgba(118, 109, 91, 0.65);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 150ms ease;
+}
+
+.source-note .source-link:hover,
+.source-note .source-link:focus-visible {
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
 }
