@@ -2475,3 +2475,18 @@ h3 {
     text-decoration-style: solid;
     text-decoration-color: currentColor;
 }
+/* SMALL MOBILE HERO TEXT REFINEMENT */
+@media (max-width: 600px) {
+    .about-page-hero > p:last-child,
+    .mission-page-hero > h1 + p {
+        font-size: calc(clamp(1.26rem, 2.4vw, 1.5rem) + var(--body-copy-increase));
+    }
+}
+
+/* HUMAN RIVER PHOTO EXPAND PROMPT */
+.river-photo-expand--human {
+    color: var(--ink);
+    text-shadow:
+        0 1px 3px rgba(255, 255, 255, 0.9),
+        0 0 7px rgba(255, 255, 255, 0.7);
+}
